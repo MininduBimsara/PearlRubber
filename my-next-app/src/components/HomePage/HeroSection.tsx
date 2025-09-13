@@ -1,9 +1,12 @@
-// components/HeroSection.tsx
+// Updated src/components/HomePage/HeroSection.tsx - Using JSON Data
 "use client";
 
 import { InfoMarker } from "./InfoMarker";
+import homepageData from "@/data/content/homepage-data.json";
 
 export function HeroSection() {
+  const { hero, treeInfo } = homepageData;
+
   return (
     <section className="min-h-screen flex items-center pt-32 pb-16 px-5">
       <div className="max-w-7xl mx-auto w-full">
@@ -11,17 +14,20 @@ export function HeroSection() {
           {/* Hero Content */}
           <div className="glass-panel p-10 order-2 lg:order-1">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-800 leading-tight mb-6">
-              Rubber Trees: Sustaining Nature, Empowering Communities.
+              {hero.headline.line1} {hero.headline.line2}{" "}
+              {hero.headline.subtitle}
             </h1>
             <p className="text-lg text-slate-700/80 leading-relaxed mb-10">
-              Explore how rubber tree plantations support livelihoods and
-              promote eco-friendly industries through sustainable farming
-              practices.
+              {hero.description}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 mb-8">
-              <button className="btn-primary">Learn More 🌱</button>
-              <button className="btn-secondary">Get Involved</button>
+              <button className="btn-primary">
+                {hero.buttons.primary.text}
+              </button>
+              <button className="btn-secondary">
+                {hero.buttons.secondary.text}
+              </button>
             </div>
 
             <p className="text-sm text-green-700 font-medium">
@@ -38,26 +44,14 @@ export function HeroSection() {
                 className="w-full h-80 lg:h-[500px] object-cover rounded-3xl"
               />
 
-              <InfoMarker
-                position="top-[20%] right-[10%]"
-                text="Latex Collection"
-                side="left"
-              />
-              <InfoMarker
-                position="top-[40%] left-[-10%]"
-                text="Natural Rubber"
-                side="right"
-              />
-              <InfoMarker
-                position="top-[65%] right-[15%]"
-                text="Sustainable Growth"
-                side="left"
-              />
-              <InfoMarker
-                position="bottom-[10%] left-[20%]"
-                text="Root System"
-                side="right"
-              />
+              {treeInfo.map((marker) => (
+                <InfoMarker
+                  key={marker.id}
+                  position={marker.position}
+                  text={marker.title}
+                  side={marker.side as "left" | "right"}
+                />
+              ))}
             </div>
           </div>
         </div>
