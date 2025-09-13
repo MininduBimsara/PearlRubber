@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Hero Content */}
-          <div className="glass-panel p-10 order-2 lg:order-1">
+          <div className="glass-panel p-10 order-2 lg:order-1 bg-white/80 border border-green-100/30">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-800 leading-tight mb-6">
               {hero.headline.line1} {hero.headline.line2}{" "}
               {hero.headline.subtitle}
@@ -39,9 +39,9 @@ export function HeroSection() {
           <div className="relative p-5 order-1 lg:order-2">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Rubber Tree Plantation"
-                className="w-full h-80 lg:h-[500px] object-cover rounded-3xl"
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                alt="Lush Green Forest"
+                className="w-full h-80 lg:h-[500px] object-cover rounded-3xl shadow-2xl"
               />
 
               {treeInfo.map((marker) => (

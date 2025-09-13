@@ -1,150 +1,165 @@
-import React from 'react';
+import React from "react";
 
-const challenges = [
-  {
-    title: "Legacy Systems",
-    description: "Outdated mapping infrastructure and manual record-keeping processes that limit accuracy and real-time data access across rubber plantations.",
-    category: "Infrastructure",
-    priority: "Critical",
-    solution: "Modern cloud-based geo-mapping platform with automated data collection and real-time synchronization capabilities."
-  },
-  {
-    title: "Limited Data Access",
-    description: "Fragmented information systems that prevent stakeholders from accessing comprehensive plantation data and compliance metrics.",
-    category: "Accessibility",
-    priority: "High",
-    solution: "Centralized dashboard providing 24/7 access to all stakeholders with role-based permissions and mobile compatibility."
-  },
-  {
-    title: "Data Inconsistency",
-    description: "Inconsistent data formats and collection methods across different regions leading to unreliable reporting and decision-making.",
-    category: "Quality",
-    priority: "High",
-    solution: "Standardized data collection protocols with automated validation and quality control mechanisms."
-  },
-  {
-    title: "Scalability Issues",
-    description: "Existing systems unable to handle the growing demands of Sri Lanka's expanding rubber industry and increasing regulatory requirements.",
-    category: "Performance",
-    priority: "Medium",
-    solution: "Scalable cloud infrastructure designed to grow with industry needs and accommodate increasing data volumes."
-  },
-  {
-    title: "EUDR Compliance Gaps",
-    description: "Difficulty in meeting European Union Deforestation Regulation requirements due to inadequate traceability and documentation systems.",
-    category: "Compliance",
-    priority: "Critical",
-    solution: "Comprehensive traceability system with blockchain-verified supply chain documentation and automated compliance reporting."
-  },
-  {
-    title: "Environmental Monitoring",
-    description: "Limited capability to monitor environmental impact and implement sustainable practices across rubber cultivation areas.",
-    category: "Sustainability",
-    priority: "High",
-    solution: "Integrated environmental monitoring with satellite imagery, soil analysis, and carbon footprint tracking capabilities."
-  }
-];
+export default function RubberChallenges() {
+  const challenges = [
+    {
+      title: "Legacy Rubber Tracking",
+      description:
+        "Outdated manual systems make it difficult to trace rubber origins and maintain accurate plantation records.",
+      icon: "📋",
+      color: "red",
+    },
+    {
+      title: "Limited EUDR Awareness",
+      description:
+        "Many farmers lack knowledge about new European regulations and compliance requirements.",
+      icon: "❓",
+      color: "orange",
+    },
+    {
+      title: "Complex Supply Chains",
+      description:
+        "Multiple intermediaries between farmers and tire manufacturers create tracking complications.",
+      icon: "🔗",
+      color: "yellow",
+    },
+  ];
 
-const getPriorityColor = (priority: string) => {
-  switch (priority) {
-    case 'Critical':
-      return 'bg-red-100 text-red-800 border-red-200';
-    case 'High':
-      return 'bg-orange-100 text-orange-800 border-orange-200';
-    case 'Medium':
-      return 'bg-yellow-100 text-yellow-800 border-yellow-200';
-    default:
-      return 'bg-gray-100 text-gray-800 border-gray-200';
-  }
-};
+  const getColorClasses = (color: string) => {
+    switch (color) {
+      case "red":
+        return {
+          bg: "bg-gradient-to-br from-red-100/40 to-red-200/20",
+          border: "border-red-200/50",
+          accent: "bg-red-500",
+        };
+      case "orange":
+        return {
+          bg: "bg-gradient-to-br from-orange-100/40 to-orange-200/20",
+          border: "border-orange-200/50",
+          accent: "bg-orange-500",
+        };
+      case "yellow":
+        return {
+          bg: "bg-gradient-to-br from-amber-100/40 to-amber-200/20",
+          border: "border-amber-200/50",
+          accent: "bg-amber-500",
+        };
+      default:
+        return {
+          bg: "bg-gradient-to-br from-slate-100/40 to-slate-200/20",
+          border: "border-slate-200/50",
+          accent: "bg-slate-500",
+        };
+    }
+  };
 
-const getCategoryColor = (category: string) => {
-  switch (category) {
-    case 'Infrastructure':
-      return 'bg-blue-50 text-blue-700';
-    case 'Accessibility':
-      return 'bg-green-50 text-green-700';
-    case 'Quality':
-      return 'bg-purple-50 text-purple-700';
-    case 'Performance':
-      return 'bg-indigo-50 text-indigo-700';
-    case 'Compliance':
-      return 'bg-emerald-50 text-emerald-700';
-    case 'Sustainability':
-      return 'bg-teal-50 text-teal-700';
-    default:
-      return 'bg-gray-50 text-gray-700';
-  }
-};
-
-export default function ChallengesSection() {
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-stone-900 mb-8 leading-tight">
-            Challenges We Address
+    <section className="py-20 px-5 bg-white/30">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">
+            Industry Challenges
           </h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
-            Sri Lanka's rubber industry faces complex challenges that require innovative solutions. 
-            Our platform addresses these critical issues with modern technology and data-driven approaches.
+          <p className="text-lg text-slate-700/80 max-w-3xl mx-auto leading-relaxed">
+            Understanding the obstacles facing Sri Lanka's rubber industry helps
+            us build better solutions
           </p>
         </div>
 
-        {/* Challenges Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-          {challenges.map((challenge, index) => (
-            <div
-              key={challenge.title}
-              className="bg-stone-50 rounded-2xl p-8 border border-stone-200 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
-              style={{
-                animationDelay: `${index * 100}ms`
-              }}
-            >
-              {/* Header with Category and Priority */}
-              <div className="flex justify-between items-start mb-6">
-                <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(challenge.category)}`}>
-                  {challenge.category}
-                </span>
-                <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold border ${getPriorityColor(challenge.priority)}`}>
-                  {challenge.priority}
-                </span>
+        {/* Challenge Cards - Staggered Layout */}
+        <div className="space-y-8">
+          {challenges.map((challenge, index) => {
+            const colors = getColorClasses(challenge.color);
+            const isEven = index % 2 === 0;
+
+            return (
+              <div
+                key={challenge.title}
+                className={`flex ${isEven ? "justify-start" : "justify-end"}`}
+              >
+                <div className={`max-w-2xl ${isEven ? "mr-8" : "ml-8"}`}>
+                  <div
+                    className={`glass-panel ${colors.bg} ${colors.border} border p-8 relative hover:transform hover:scale-105 transition-all duration-500`}
+                  >
+                    {/* Challenge Icon */}
+                    <div
+                      className={`absolute ${
+                        isEven ? "-left-6" : "-right-6"
+                      } top-6`}
+                    >
+                      <div
+                        className={`w-12 h-12 ${colors.accent} rounded-full flex items-center justify-center shadow-lg`}
+                      >
+                        <span className="text-white text-xl">
+                          {challenge.icon}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className={isEven ? "pl-8" : "pr-8"}>
+                      <h3 className="text-2xl font-bold text-slate-800 mb-4">
+                        {challenge.title}
+                      </h3>
+                      <p className="text-slate-700/80 leading-relaxed">
+                        {challenge.description}
+                      </p>
+                    </div>
+
+                    {/* Decorative Element */}
+                    <div
+                      className={`absolute ${
+                        isEven ? "top-4 right-4" : "top-4 left-4"
+                      } w-3 h-3 ${colors.accent} rounded-full opacity-60`}
+                    ></div>
+                  </div>
+                </div>
               </div>
+            );
+          })}
+        </div>
 
-              {/* Challenge Title */}
-              <h3 className="text-2xl font-bold text-stone-900 mb-4">
-                {challenge.title}
+        {/* Solution Preview */}
+        <div className="mt-20">
+          <div className="glass-panel bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-lg border border-green-200/30 p-12 text-center">
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-3xl font-bold text-slate-800 mb-6">
+                Our Solution Approach
               </h3>
-
-              {/* Challenge Description */}
-              <p className="text-stone-600 leading-relaxed mb-6">
-                {challenge.description}
+              <p className="text-lg text-slate-700/80 leading-relaxed mb-8">
+                We address these challenges through innovative technology,
+                comprehensive training programs, and seamless integration with
+                existing farming practices.
               </p>
 
-              {/* Solution */}
-              <div className="border-t border-stone-200 pt-6">
-                <h4 className="text-sm font-semibold text-emerald-800 mb-2 uppercase tracking-wide">
-                  Our Solution
-                </h4>
-                <p className="text-sm text-stone-700 leading-relaxed">
-                  {challenge.solution}
-                </p>
+              {/* Solution Highlights */}
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div className="glass-panel bg-white/50 border border-white/30 p-6">
+                  <div className="text-2xl mb-3">🚀</div>
+                  <h4 className="font-bold text-slate-800 mb-2">Modern Tech</h4>
+                  <p className="text-sm text-slate-700/80">
+                    Digital tracking systems
+                  </p>
+                </div>
+                <div className="glass-panel bg-white/50 border border-white/30 p-6">
+                  <div className="text-2xl mb-3">📚</div>
+                  <h4 className="font-bold text-slate-800 mb-2">Education</h4>
+                  <p className="text-sm text-slate-700/80">
+                    EUDR compliance training
+                  </p>
+                </div>
+                <div className="glass-panel bg-white/50 border border-white/30 p-6">
+                  <div className="text-2xl mb-3">🤝</div>
+                  <h4 className="font-bold text-slate-800 mb-2">Partnership</h4>
+                  <p className="text-sm text-slate-700/80">
+                    Connecting all stakeholders
+                  </p>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Impact Statement */}
-        <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-stone-800 rounded-3xl p-12 text-center text-white">
-          <h3 className="text-4xl font-bold mb-6">
-            Transforming Challenges into Opportunities
-          </h3>
-          <p className="text-xl text-emerald-100 max-w-4xl mx-auto leading-relaxed">
-            By addressing these fundamental challenges, we're not just solving problems – we're creating 
-            opportunities for Sri Lankan rubber producers to thrive in the global market while maintaining 
-            the highest standards of sustainability and compliance.
-          </p>
+          </div>
         </div>
       </div>
     </section>
