@@ -1,35 +1,36 @@
-import ContactHero from "@/components/Contact/ContactHero";
+// app/contact/page.tsx
+import ContactHeader from "@/components/Contact/ContactHeader";
 import ContactForm from "@/components/Contact/ContactForm";
-import ContactInfo from "@/components/Contact/ContactInfo";
-import SocialLinks from "@/components/Contact/SocialLinks";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')`,
-        }}
-      />
+    <div className="min-h-screen bg-white relative mt-20">
+      {/* Original background content - slightly blurred */}
+      <div className="absolute inset-0 filter blur-sm opacity-60">
+        <main className="container mx-auto px-6 py-16 max-w-6xl">
+          <Image
+            src="/my-image.jpg"
+            alt=""
+            fill // makes the image cover the parent div
+            style={{ objectFit: "cover" }}
+          />
+        </main>
+      </div>
 
-      {/* Dark Overlay for better contrast */}
-      <div className="absolute inset-0 bg-black/40" />
-
-      {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-6 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto w-full">
-          {/* Left Panel */}
-          <div className="space-y-8">
-            <ContactInfo />
-            <SocialLinks />
-          </div>
-
-          {/* Right Panel */}
-          <div className="flex items-center justify-center">
+      {/* Glassmorphism overlay - reduced size */}
+      <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
+        <div
+          className="w-full max-w-3xl backdrop-blur-[20px] bg-white/30 border border-white/20 rounded-[20px] shadow-2xl p-6 md:p-8"
+          style={{
+            fontFamily:
+              "'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
+          }}
+        >
+          <main className="container mx-auto max-w-4xl">
+            <ContactHeader />
             <ContactForm />
-          </div>
+          </main>
         </div>
       </div>
     </div>
