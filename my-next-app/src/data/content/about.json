@@ -1,0 +1,245 @@
+{
+  "mission": {
+    "title": "Our Mission",
+    "description": "Empowering Sri Lanka with intelligent geo-mapping solutions for sustainable rubber development and EUDR compliance",
+    "vision": "To become Sri Lanka's leading geo-mapping platform, transforming how the rubber industry approaches sustainability, compliance, and agricultural innovation.",
+    "focusAreas": [
+      {
+        "title": "Agriculture Monitoring",
+        "description": "Advanced monitoring of rubber plantations and crop areas to prevent unauthorized encroachment and optimize yield management across Sri Lanka's agricultural regions.",
+        "category": "Primary Focus"
+      },
+      {
+        "title": "Flood Management",
+        "description": "Real-time flood risk assessment and early warning systems to protect rubber cultivation areas and surrounding communities from monsoon-related damages.",
+        "category": "Risk Mitigation"
+      },
+      {
+        "title": "Land Protection",
+        "description": "Comprehensive land use mapping and protection protocols to preserve valuable agricultural land and maintain sustainable rubber production practices.",
+        "category": "Conservation"
+      },
+      {
+        "title": "Urban Planning",
+        "description": "Strategic integration of agricultural zones with urban development plans to balance economic growth with environmental sustainability.",
+        "category": "Development"
+      }
+    ],
+    "coreValues": [
+      {
+        "title": "Sustainability",
+        "description": "Environmental stewardship drives every decision we make, ensuring rubber production preserves Sri Lanka's natural heritage.",
+        "color": "emerald"
+      },
+      {
+        "title": "Innovation",
+        "description": "Cutting-edge technology and data analytics revolutionize traditional agricultural practices for maximum efficiency.",
+        "color": "stone"
+      },
+      {
+        "title": "Transparency",
+        "description": "Complete visibility into supply chains and farming practices builds trust with global partners and ensures compliance.",
+        "color": "amber"
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "title": "Legacy Systems",
+      "description": "Outdated mapping infrastructure and manual record-keeping processes that limit accuracy and real-time data access across rubber plantations.",
+      "category": "Infrastructure",
+      "priority": "Critical",
+      "solution": "Modern cloud-based geo-mapping platform with automated data collection and real-time synchronization capabilities."
+    },
+    {
+      "title": "Limited Data Access",
+      "description": "Fragmented information systems that prevent stakeholders from accessing comprehensive plantation data and compliance metrics.",
+      "category": "Accessibility",
+      "priority": "High",
+      "solution": "Centralized dashboard providing 24/7 access to all stakeholders with role-based permissions and mobile compatibility."
+    },
+    {
+      "title": "Data Inconsistency",
+      "description": "Inconsistent data formats and collection methods across different regions leading to unreliable reporting and decision-making.",
+      "category": "Quality",
+      "priority": "High",
+      "solution": "Standardized data collection protocols with automated validation and quality control mechanisms."
+    },
+    {
+      "title": "Scalability Issues",
+      "description": "Existing systems unable to handle the growing demands of Sri Lanka's expanding rubber industry and increasing regulatory requirements.",
+      "category": "Performance",
+      "priority": "Medium",
+      "solution": "Scalable cloud infrastructure designed to grow with industry needs and accommodate increasing data volumes."
+    },
+    {
+      "title": "EUDR Compliance Gaps",
+      "description": "Difficulty in meeting European Union Deforestation Regulation requirements due to inadequate traceability and documentation systems.",
+      "category": "Compliance",
+      "priority": "Critical",
+      "solution": "Comprehensive traceability system with blockchain-verified supply chain documentation and automated compliance reporting."
+    },
+    {
+      "title": "Environmental Monitoring",
+      "description": "Limited capability to monitor environmental impact and implement sustainable practices across rubber cultivation areas.",
+      "category": "Sustainability",
+      "priority": "High",
+      "solution": "Integrated environmental monitoring with satellite imagery, soil analysis, and carbon footprint tracking capabilities."
+    }
+  ],
+  "impact": {
+    "metrics": [
+      {
+        "value": "50,000+",
+        "label": "Active Users",
+        "description": "Rubber farmers, plantation managers, and industry stakeholders actively using our platform",
+        "growth": "+127% this year"
+      },
+      {
+        "value": "99.9%",
+        "label": "Accuracy Rate",
+        "description": "Precision in geo-mapping and land boundary identification across all monitored plantations",
+        "growth": "Industry leading"
+      },
+      {
+        "value": "226,000",
+        "label": "Data Points Processed",
+        "description": "Real-time agricultural and environmental data points processed monthly",
+        "growth": "+340% quarterly"
+      },
+      {
+        "value": "850,000",
+        "label": "Hectares Mapped",
+        "description": "Total rubber plantation area mapped and monitored across Sri Lanka",
+        "growth": "78% coverage"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "EUDR Compliance Excellence",
+        "description": "100% of our partner plantations now meet European Union Deforestation Regulation requirements through our comprehensive tracking system.",
+        "metric": "100% Compliance Rate"
+      },
+      {
+        "title": "Sustainable Practices Adoption",
+        "description": "Significant reduction in environmental impact through optimized resource usage and deforestation prevention across monitored areas.",
+        "metric": "35% Carbon Reduction"
+      },
+      {
+        "title": "Economic Impact",
+        "description": "Direct positive economic impact on rubber farming communities through improved yield management and market access.",
+        "metric": "$12.5M Generated"
+      },
+      {
+        "title": "Technology Innovation",
+        "description": "Pioneer in applying advanced geo-mapping technology to tropical agriculture, setting new industry standards.",
+        "metric": "3 Patents Pending"
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2019",
+        "milestone": "Platform Launch"
+      },
+      {
+        "year": "2023",
+        "milestone": "EUDR Compliance Leader"
+      },
+      {
+        "year": "2025",
+        "milestone": "Industry Standard"
+      }
+    ]
+  },
+  "team": {
+    "stats": [
+      {
+        "category": "Engineering",
+        "count": "12",
+        "description": "Software engineers, data scientists, and GIS specialists"
+      },
+      {
+        "category": "Agriculture Experts",
+        "count": "8",
+        "description": "Agronomists and rubber cultivation specialists"
+      },
+      {
+        "category": "Operations",
+        "count": "6",
+        "description": "Customer success, partnerships, and business operations"
+      },
+      {
+        "category": "Research",
+        "count": "4",
+        "description": "Environmental scientists and sustainability researchers"
+      }
+    ],
+    "values": [
+      {
+        "title": "Data-Driven Excellence",
+        "description": "Every decision is backed by comprehensive data analysis and real-world testing to ensure optimal outcomes for our users and the environment."
+      },
+      {
+        "title": "Environmental Stewardship",
+        "description": "We prioritize sustainable practices and environmental protection in everything we do, contributing to Sri Lanka's green future."
+      },
+      {
+        "title": "Community Partnership",
+        "description": "Working closely with local farming communities to understand their needs and develop solutions that truly make a difference."
+      },
+      {
+        "title": "Technological Innovation",
+        "description": "Continuously pushing the boundaries of what's possible with geo-mapping and agricultural technology."
+      },
+      {
+        "title": "Transparency & Trust",
+        "description": "Building lasting relationships through honest communication, reliable data, and consistent delivery of our promises."
+      },
+      {
+        "title": "Global Standards",
+        "description": "Meeting and exceeding international compliance requirements while maintaining local relevance and accessibility."
+      }
+    ],
+    "culture": {
+      "philosophy": "We believe in empowering every team member to contribute their unique expertise while maintaining a shared focus on sustainable innovation and measurable impact.",
+      "principles": [
+        {
+          "title": "Collaborative",
+          "description": "Cross-functional teams working together to solve complex agricultural challenges"
+        },
+        {
+          "title": "Innovative",
+          "description": "Encouraging creative solutions and continuous learning in emerging technologies"
+        },
+        {
+          "title": "Impact-Focused",
+          "description": "Every initiative measured by its positive impact on farmers and the environment"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Remote Friendly",
+          "description": "Flexible work arrangements"
+        },
+        {
+          "title": "Learning Focus",
+          "description": "Continuous skill development"
+        },
+        {
+          "title": "Impact Work",
+          "description": "Meaningful environmental projects"
+        },
+        {
+          "title": "Growth",
+          "description": "Career advancement opportunities"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "title": "ABOUT",
+    "subtitle": "Revolutionizing Sri Lanka's rubber industry through intelligent geo-mapping and sustainable agricultural practices",
+    "location": "COLOMBO, SRI LANKA",
+    "backgroundImage": "/images/sri-lanka-rubber-landscape.jpg"
+  }
+}

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -23,4 +25,38 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Nunito', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-cream-50/25 backdrop-blur-[15px] border border-white/20 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.1)];
+  }
+  
+  .glass-button {
+    @apply rounded-full transition-all duration-300 hover:transform hover:-translate-y-0.5;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-4 bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 hover:bg-green-800 hover:transform hover:-translate-y-0.5 hover:shadow-[0_12px_24px_rgba(49,129,98,0.3)];
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-4 bg-amber-400/20 text-slate-800 font-semibold rounded-xl backdrop-blur-[10px] border border-amber-400/30 transition-all duration-300 hover:bg-amber-400/30 hover:transform hover:-translate-y-0.5;
+  }
+}
+
+@layer utilities {
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
 }
