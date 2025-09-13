@@ -1,5 +1,5 @@
-// app/layout.tsx
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   keywords:
     "rubber trees, sustainable farming, eco-friendly, natural rubber, plantations",
   authors: [{ name: "EcoRubber Team" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -19,6 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
