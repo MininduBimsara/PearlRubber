@@ -20,12 +20,12 @@ export default function ContactHeader() {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3">
-        <button className="bg-yellow-300 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group">
+        <button className="bg-yellow-300 hover:bg-yellow-400  text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group">
           <span>📞</span>
           <span>+1 (415) 498-1730</span>
         </button>
 
-        <button className="bg-yellow-300 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group">
+        <button className="bg-white hover:bg-gray-100 border border-black text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group">
           <span>Book a free consultation</span>
           <span className="group-hover:translate-x-1 transition-transform duration-200">
             →

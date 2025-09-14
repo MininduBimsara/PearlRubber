@@ -30,7 +30,7 @@ export default function ComplianceImpact() {
   ];
 
   return (
-    <section className="py-24 px-6 lg:px-8 bg-green-50">
+    <section className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

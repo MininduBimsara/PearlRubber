@@ -31,7 +31,7 @@ const stats: Stat[] = [
 
 export function StatsSection() {
   return (
-    <section className="py-24 px-6 lg:px-8 bg-green-50">
+    <section className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full mb-6">

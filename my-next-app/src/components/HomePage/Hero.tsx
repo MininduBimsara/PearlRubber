@@ -17,43 +17,7 @@ export default function Hero() {
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?w=1920&h=1080&fit=crop')`,
         }}
-      >
-        
-      </div>
-
-      {/* Geometric Pattern Background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-20 w-32 h-32 border-2 border-green-300 transform rotate-45"></div>
-        <div className="absolute top-40 right-40 w-24 h-24 border-2 border-amber-300 transform rotate-12"></div>
-        <div className="absolute bottom-40 right-60 w-40 h-40 border-2 border-green-200 transform -rotate-12"></div>
-        <div className="absolute bottom-20 right-20 w-20 h-20 border-2 border-amber-200 transform rotate-45"></div>
-      </div>
-
-      {/* Hexagonal Pattern */}
-      <div className="absolute right-0 top-0 w-1/2 h-full">
-        <svg
-          className="w-full h-full opacity-5"
-          viewBox="0 0 400 400"
-          fill="none"
-        >
-          {[...Array(6)].map((_, row) =>
-            [...Array(4)].map((_, col) => {
-              const x = col * 80 + (row % 2) * 40;
-              const y = row * 70;
-              return (
-                <polygon
-                  key={`${row}-${col}`}
-                  points="30,0 70,22 70,66 30,88 -10,66 -10,22"
-                  transform={`translate(${x}, ${y})`}
-                  stroke="#318162"
-                  strokeWidth="1"
-                  fill="none"
-                />
-              );
-            })
-          )}
-        </svg>
-      </div>
+      ></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="pt-20 pb-16 lg:pt-32 lg:pb-24">
@@ -123,7 +87,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Visual Dashboard Preview */}
+            {/* Visual Dashboard Preview with Image */}
             <div
               className={`relative transition-all duration-1000 delay-300 ${
                 isLoaded
@@ -131,6 +95,68 @@ export default function Hero() {
                   : "translate-y-10 opacity-0"
               }`}
             >
+              {/* Main Image Container */}
+              <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=400&fit=crop"
+                  alt="Rubber plantation management dashboard"
+                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                />
+
+                {/* Floating Info Cards */}
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-4 max-w-xs">
+                  <div className="flex items-center mb-2">
+                    <MapPin className="w-4 h-4 text-green-600 mr-2" />
+                    <span className="text-sm font-semibold text-gray-900">
+                      Live Monitoring
+                    </span>
+                  </div>
+                  <div className="text-xs text-gray-600">
+                    247.8 hectares tracked
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                    <span className="text-xs text-green-600 font-medium">
+                      Active
+                    </span>
+                  </div>
+                </div>
+
+                <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-4 max-w-xs">
+                  <div className="flex items-center mb-2">
+                    <Shield className="w-4 h-4 text-green-600 mr-2" />
+                    <span className="text-sm font-semibold text-gray-900">
+                      EUDR Status
+                    </span>
+                  </div>
+                  <div className="text-xs text-green-600 font-medium">
+                    100% Compliant
+                  </div>
+                  <div className="text-xs text-gray-600">
+                    Last verified: 2 hours ago
+                  </div>
+                </div>
+
+                <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-4 max-w-xs">
+                  <div className="flex items-center mb-2">
+                    <TrendingUp className="w-4 h-4 text-blue-600 mr-2" />
+                    <span className="text-sm font-semibold text-gray-900">
+                      Analytics
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <div className="font-bold text-green-600">95%</div>
+                      <div className="text-gray-600">Accuracy</div>
+                    </div>
+                    <div>
+                      <div className="font-bold text-blue-600">24/7</div>
+                      <div className="text-gray-600">Uptime</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Background Decorations */}
               <div className="absolute -z-10 top-8 right-8 w-32 h-32 bg-green-100 rounded-full blur-3xl"></div>
               <div className="absolute -z-10 bottom-8 left-8 w-24 h-24 bg-yellow-100 rounded-full blur-2xl"></div>

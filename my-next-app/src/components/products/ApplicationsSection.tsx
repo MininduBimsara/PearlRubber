@@ -1,5 +1,6 @@
 import React from "react";
 import { Smartphone, Monitor, Check } from "lucide-react";
+import Image from "next/image";
 
 interface AppFeature {
   text: string;
@@ -32,7 +33,7 @@ const applications: AppConfig[] = [
     gradient: "bg-gradient-to-br from-green-50 to-blue-50",
     iconColor: "bg-gradient-to-br from-green-500 to-green-600",
     imageUrl:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop", // Mobile app mockup
+      "/mobile.jpg", // Mobile app mockup
   },
   {
     icon: Monitor,
@@ -48,7 +49,7 @@ const applications: AppConfig[] = [
     gradient: "bg-gradient-to-br from-blue-50 to-purple-50",
     iconColor: "bg-gradient-to-br from-blue-500 to-blue-600",
     imageUrl:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop", // Desktop dashboard mockup
+      "/desktop.jpg", // Desktop dashboard mockup
   },
 ];
 
@@ -96,11 +97,13 @@ export function ApplicationsSection() {
                 </div>
 
                 {/* Updated Image Section */}
-                <div className="bg-white rounded-xl p-6 mb-6 shadow-sm">
+                <div className="bg-white rounded-xl mb-2 shadow-sm">
                   <div className="relative overflow-hidden rounded-lg">
-                    <img
+                    <Image
                       src={app.imageUrl}
                       alt={`${app.title} interface`}
+                      width={500}
+                      height={300}
                       className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

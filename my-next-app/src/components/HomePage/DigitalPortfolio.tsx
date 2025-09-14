@@ -1,4 +1,5 @@
 import { MapPin, Satellite, Shield, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 export default function DigitalPortfolio() {
   const features = [
@@ -32,7 +33,7 @@ export default function DigitalPortfolio() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -117,25 +118,13 @@ export default function DigitalPortfolio() {
           </div>
 
           <div className="relative bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 h-80 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=400&fit=crop"
-              alt="Sri Lanka map view"
-              className="w-full h-full object-cover rounded-xl opacity-80"
+            <Image
+              src="/rubber.jpg"
+              alt="External image"
+              fill // makes the image cover the parent div
+              style={{ objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-green-900/10 rounded-xl"></div>
-
-            {/* Overlay Content */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white bg-black/50 backdrop-blur-sm rounded-2xl p-8">
-                <MapPin className="w-12 h-12 mx-auto mb-4 text-green-400" />
-                <h4 className="text-2xl font-bold mb-2">
-                  Sri Lankan Rubber Belt
-                </h4>
-                <p className="text-green-200">
-                  30,000+ Plantations • 500K Hectares
-                </p>
-              </div>
-            </div>
 
             {/* Floating Indicators */}
             <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl p-3">
