@@ -37,14 +37,14 @@ export default function SmartMonitoring() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full mb-6">
-            <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-            <span className="text-sm font-medium text-blue-700">
+            <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+            <span className="text-sm font-medium text-green-700">
               Smart Technology
             </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Advanced Monitoring &
-            <span className="text-blue-600"> Analytics</span>
+            <span className="text-green-600"> Analytics</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Leveraging IoT sensors, satellite integration, and AI-powered
@@ -60,7 +60,7 @@ export default function SmartMonitoring() {
               className="bg-gray-50 rounded-3xl p-8 hover:bg-white hover:shadow-2xl transition-all duration-500 group"
             >
               {/* Icon */}
-              <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+              <div className="bg-white/90 w-16 h-16 rounded-2xl flex items-center justify-center text-green-600 mb-6 ">
                 {feature.icon}
               </div>
 
@@ -87,7 +87,7 @@ export default function SmartMonitoring() {
                 {feature.metrics.map((metric, i) => (
                   <div
                     key={i}
-                    className="flex items-center text-sm text-blue-600"
+                    className="flex items-center text-sm text-green-600"
                   >
                     <BarChart3 className="w-4 h-4 mr-2" />
                     {metric}

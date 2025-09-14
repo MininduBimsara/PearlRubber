@@ -132,15 +132,15 @@ export default function ContactForm() {
             type="submit"
             disabled={isSubmitting || isSubmitted}
             className={`
-              px-6 py-3 rounded-full font-semibold text-base transition-all duration-200
-              ${
-                isSubmitted
-                  ? "bg-green-500 text-white shadow-lg shadow-green-500/25"
-                  : isSubmitting
-                  ? "bg-gray-400 text-white cursor-not-allowed"
-                  : "bg-gradient-to-r from-green-400 to-amber-400 text-white hover:shadow-xl hover:shadow-green-400/25 hover:scale-105"
-              }
-            `}
+    inline-flex items-center px-8 py-4 font-semibold rounded-xl transition-all duration-300
+    ${
+      isSubmitted
+        ? "bg-green-500 text-white shadow-lg transform scale-105"
+        : isSubmitting
+        ? "bg-gray-400 text-white cursor-not-allowed"
+        : "bg-yellow-400 hover:bg-yellow-500 text-black transform hover:scale-105 hover:shadow-lg"
+    }
+  `}
           >
             {isSubmitted
               ? "Message Sent! ✓"

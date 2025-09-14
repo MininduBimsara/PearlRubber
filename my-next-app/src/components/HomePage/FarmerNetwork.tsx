@@ -40,7 +40,7 @@ export default function FarmerNetwork() {
   ];
 
   return (
-    <section className="py-24 bg-green-50">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -134,7 +134,7 @@ export default function FarmerNetwork() {
                 </div>
               </div>
 
-              <button className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-colors duration-300">
+              <button className="inline-flex items-center px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 <Smartphone className="mr-2 w-5 h-5" />
                 Download App
               </button>

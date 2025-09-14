@@ -7,11 +7,21 @@
   
   --color-green-50: #f0fdf4;
   --color-green-100: #dcfce7;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
   --color-green-700: #318162;
   --color-green-800: #267549;
+  --color-yellow-400: #facc15;
+  --color-yellow-500: #eab308;
   --color-amber-50: #fffbeb;
   --color-amber-400: #F9B75D;
+  --color-amber-600: #d97706;
   --color-cream-50: #FEF8F0;
+  --color-gray-200: #e5e7eb;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
   --color-slate-600: #475569;
   --color-slate-700: #334155;
   --color-slate-800: #1e293b;
@@ -66,35 +76,137 @@ body {
     transform: translateY(-2px);
   }
   
+  /* Updated Primary Button - Yellow with black text */
   .btn-primary {
+    display: inline-flex;
+    align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--color-green-700);
-    color: white;
+    background-color: var(--color-yellow-400);
+    color: black;
     font-weight: 600;
     border-radius: 0.75rem;
     transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px color-mix(in srgb, black 5%, transparent);
   }
   
   .btn-primary:hover {
-    background-color: var(--color-green-800);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px color-mix(in srgb, var(--color-green-700) 30%, transparent);
+    background-color: var(--color-yellow-500);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--color-yellow-400) 30%, transparent);
   }
   
+  /* Updated Secondary Button - White/transparent with green accent */
   .btn-secondary {
+    display: inline-flex;
+    align-items: center;
     padding: 1rem 2rem;
-    background-color: color-mix(in srgb, var(--color-amber-400) 20%, transparent);
-    color: var(--color-slate-800);
+    background-color: transparent;
+    color: var(--color-gray-700);
     font-weight: 600;
     border-radius: 0.75rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid color-mix(in srgb, var(--color-amber-400) 30%, transparent);
+    border: 2px solid var(--color-gray-200);
     transition: all 0.3s ease;
   }
   
   .btn-secondary:hover {
-    background-color: color-mix(in srgb, var(--color-amber-400) 30%, transparent);
-    transform: translateY(-2px);
+    border-color: var(--color-green-500);
+    color: var(--color-green-600);
+    transform: translateY(-1px);
+  }
+  
+  /* Primary button for dark backgrounds */
+  .btn-primary-dark {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: var(--color-green-600);
+    font-weight: 600;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px color-mix(in srgb, black 10%, transparent);
+  }
+  
+  .btn-primary-dark:hover {
+    background-color: var(--color-gray-100);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 24px color-mix(in srgb, black 20%, transparent);
+  }
+  
+  /* Secondary button for dark backgrounds */
+  .btn-secondary-dark {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary-dark:hover {
+    background-color: white;
+    color: var(--color-green-600);
+    transform: translateY(-1px);
+  }
+  
+  /* Green button variant */
+  .btn-green {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-green-600);
+    color: white;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px color-mix(in srgb, var(--color-green-600) 20%, transparent);
+  }
+  
+  .btn-green:hover {
+    background-color: var(--color-green-700);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--color-green-600) 30%, transparent);
+  }
+  
+  /* Form button states */
+  .btn-form {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-form.success {
+    background-color: var(--color-green-500);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--color-green-500) 25%, transparent);
+  }
+  
+  .btn-form.loading {
+    background-color: var(--color-gray-400);
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .btn-form.default {
+    background-color: var(--color-yellow-400);
+    color: black;
+    transform: translateY(0);
+  }
+  
+  .btn-form.default:hover {
+    background-color: var(--color-yellow-500);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--color-yellow-400) 30%, transparent);
   }
   
   .animate-slide-down {
@@ -161,5 +273,30 @@ body {
   
   .bg-white\/80 {
     background-color: color-mix(in srgb, white 80%, transparent);
+  }
+  
+  /* Additional utility colors */
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
+  }
+  
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
+  
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
+  
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
+  
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
   }
 }

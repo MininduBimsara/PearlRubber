@@ -1,6 +1,5 @@
 import Hero from "@/components/About/Hero";
 import RubberMission from "@/components/About/MissionSection";
-import RubberChallenges from "@/components/About/ChallengesSection";
 import ComplianceImpact from "@/components/About/ImpactSection";
 
 // Import the JSON data
@@ -12,7 +11,6 @@ export default function AboutPage() {
       <Hero data={aboutData.hero} />
       <div className="relative">
         <RubberMission />
-        <RubberChallenges />
         <ComplianceImpact />
       </div>
     </main>

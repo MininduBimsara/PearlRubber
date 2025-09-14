@@ -1,4 +1,3 @@
-// components/products/ApplicationsSection.tsx
 import React from "react";
 import { Smartphone, Monitor, Check } from "lucide-react";
 
@@ -15,6 +14,7 @@ interface AppConfig {
   features: AppFeature[];
   gradient: string;
   iconColor: string;
+  imageUrl: string; // Added image URL
 }
 
 const applications: AppConfig[] = [
@@ -31,6 +31,8 @@ const applications: AppConfig[] = [
     ],
     gradient: "bg-gradient-to-br from-green-50 to-blue-50",
     iconColor: "bg-gradient-to-br from-green-500 to-green-600",
+    imageUrl:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop", // Mobile app mockup
   },
   {
     icon: Monitor,
@@ -45,14 +47,22 @@ const applications: AppConfig[] = [
     ],
     gradient: "bg-gradient-to-br from-blue-50 to-purple-50",
     iconColor: "bg-gradient-to-br from-blue-500 to-blue-600",
+    imageUrl:
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop", // Desktop dashboard mockup
   },
 ];
 
 export function ApplicationsSection() {
   return (
-    <section className="py-20 px-6 lg:px-8">
+    <section className="py-20 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-green-50 rounded-full mb-6">
+            <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
+            <span className="text-sm font-medium text-green-700">
+              Applications Suite
+            </span>
+          </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Powerful Applications Suite
           </h2>
@@ -67,7 +77,10 @@ export function ApplicationsSection() {
           {applications.map((app, index) => {
             const IconComponent = app.icon;
             return (
-              <div key={index} className={`${app.gradient} rounded-2xl p-8`}>
+              <div
+                key={index}
+                className={`${app.gradient} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500`}
+              >
                 <div className="flex items-center space-x-4 mb-6">
                   <div
                     className={`w-12 h-12 ${app.iconColor} rounded-xl flex items-center justify-center`}
@@ -82,9 +95,15 @@ export function ApplicationsSection() {
                   </div>
                 </div>
 
+                {/* Updated Image Section */}
                 <div className="bg-white rounded-xl p-6 mb-6 shadow-sm">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-                    [{app.title} Screenshot Placeholder]
+                  <div className="relative overflow-hidden rounded-lg">
+                    <img
+                      src={app.imageUrl}
+                      alt={`${app.title} interface`}
+                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
                 </div>
 

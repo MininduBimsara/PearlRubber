@@ -19,7 +19,7 @@ export default function ComplianceImpact() {
       value: "95%",
       label: "Traceability Rate",
       description: "Complete supply chain visibility from tree to tire",
-      icon: "📍",
+      icon: "🔍",
     },
     {
       value: "100%",
@@ -30,74 +30,73 @@ export default function ComplianceImpact() {
   ];
 
   return (
-    <section className="py-20 px-5 bg-gradient-to-b from-green-50/30 to-cream-50/20">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 px-6 lg:px-8 bg-green-50">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">
-            Our Impact
+          <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full mb-6">
+            <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
+            <span className="text-sm font-medium text-green-800">
+              Our Impact
+            </span>
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Measurable <span className="text-green-600">Results</span>
           </h2>
-          <p className="text-lg text-slate-700/80 max-w-3xl mx-auto leading-relaxed">
-            Measurable results in transforming Sri Lanka's rubber industry
-            compliance
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Transforming Sri Lanka's rubber industry compliance with real,
+            measurable outcomes that benefit farmers and the environment.
           </p>
         </div>
 
-        {/* Metrics Grid - Floating Dashboard Style */}
+        {/* Metrics Grid */}
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mb-20">
           {metrics.map((metric, index) => (
             <div
               key={metric.label}
-              className="relative group"
-              style={{ animationDelay: `${index * 150}ms` }}
+              className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 group"
             >
-              {/* Main Card */}
-              <div className="glass-panel bg-white/70 border border-green-100/40 p-8 text-center hover:transform hover:-translate-y-4 transition-all duration-500 relative z-10">
-                {/* Icon Background */}
-                <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <span className="text-white text-3xl">{metric.icon}</span>
-                </div>
-
-                {/* Metric Value */}
-                <div className="text-4xl font-black text-slate-800 mb-2">
-                  {metric.value}
-                </div>
-
-                {/* Label */}
-                <h3 className="text-lg font-bold text-slate-800 mb-3">
-                  {metric.label}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm text-slate-700/80 leading-relaxed">
-                  {metric.description}
-                </p>
+              {/* Icon Background */}
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-white text-2xl">{metric.icon}</span>
               </div>
 
-              {/* Floating Background Element */}
-              <div className="absolute inset-0 bg-gradient-to-br from-green-200/20 to-amber-200/20 rounded-2xl transform rotate-1 group-hover:rotate-2 transition-transform duration-500 -z-10"></div>
+              {/* Metric Value */}
+              <div className="text-4xl font-bold text-green-600 mb-2">
+                {metric.value}
+              </div>
+
+              {/* Label */}
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {metric.label}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-600 leading-relaxed">
+                {metric.description}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Success Stories */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-slate-800 text-center mb-12">
+          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
             Success Highlights
           </h3>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Story 1 */}
-            <div className="glass-panel bg-gradient-to-br from-blue-100/30 to-white/50 border border-blue-200/30 p-8">
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-white text-xl">🌱</span>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-800 mb-2">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">
                     Smallholder Success
                   </h4>
-                  <p className="text-slate-700/80 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     Over 25,000 small-scale rubber farmers now have direct
                     access to European markets through our EUDR compliance
                     platform, increasing their income by an average of 35%.
@@ -107,16 +106,16 @@ export default function ComplianceImpact() {
             </div>
 
             {/* Story 2 */}
-            <div className="glass-panel bg-gradient-to-br from-amber-100/30 to-white/50 border border-amber-200/30 p-8">
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xl">🏭</span>
+                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-black text-xl">🏭</span>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-800 mb-2">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">
                     Industry Transformation
                   </h4>
-                  <p className="text-slate-700/80 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     Major tire manufacturers now have complete supply chain
                     transparency, ensuring their products meet the highest
                     environmental and ethical standards.
@@ -129,19 +128,12 @@ export default function ComplianceImpact() {
 
         {/* Future Vision */}
         <div className="text-center">
-          <div className="glass-panel bg-gradient-to-r from-green-600/90 via-green-500/90 to-blue-600/90 backdrop-blur-lg p-12 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-4 left-4 w-32 h-32 border border-white/20 rounded-full"></div>
-              <div className="absolute bottom-4 right-4 w-24 h-24 border border-white/20 rounded-full"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-white/20 rounded-full"></div>
-            </div>
-
-            <div className="relative z-10 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-green-600 to-green-800 rounded-3xl p-12 text-white shadow-2xl">
+            <div className="max-w-4xl mx-auto">
               <h3 className="text-3xl font-bold mb-6">
                 Leading Sri Lanka's Green Future
               </h3>
-              <p className="text-lg text-green-100 leading-relaxed mb-8">
+              <p className="text-xl text-green-100 leading-relaxed mb-8">
                 Together, we're building a sustainable rubber industry that
                 protects our environment while ensuring economic prosperity for
                 all stakeholders in the supply chain.

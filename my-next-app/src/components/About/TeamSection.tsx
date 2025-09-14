@@ -5,31 +5,37 @@ const companyValues = [
     title: "Data-Driven Excellence",
     description:
       "Every decision is backed by comprehensive data analysis and real-world testing to ensure optimal outcomes for our users and the environment.",
+    icon: "📊",
   },
   {
     title: "Environmental Stewardship",
     description:
       "We prioritize sustainable practices and environmental protection in everything we do, contributing to Sri Lanka's green future.",
+    icon: "🌍",
   },
   {
     title: "Community Partnership",
     description:
       "Working closely with local farming communities to understand their needs and develop solutions that truly make a difference.",
+    icon: "🤝",
   },
   {
     title: "Technological Innovation",
     description:
       "Continuously pushing the boundaries of what's possible with geo-mapping and agricultural technology.",
+    icon: "🚀",
   },
   {
     title: "Transparency & Trust",
     description:
       "Building lasting relationships through honest communication, reliable data, and consistent delivery of our promises.",
+    icon: "💎",
   },
   {
     title: "Global Standards",
     description:
       "Meeting and exceeding international compliance requirements while maintaining local relevance and accessibility.",
+    icon: "🏆",
   },
 ];
 
@@ -58,14 +64,18 @@ const teamStats = [
 
 export default function TeamSection() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 lg:px-8 bg-green-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-stone-900 mb-8 leading-tight">
-            Our Team & Values
+          <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full mb-6">
+            <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
+            <span className="text-sm font-medium text-green-800">Our Team</span>
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Expert Team & <span className="text-green-600">Core Values</span>
           </h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             A diverse team of experts united by a shared commitment to
             transforming Sri Lanka's rubber industry through technology,
             sustainability, and innovation.
@@ -77,18 +87,15 @@ export default function TeamSection() {
           {teamStats.map((stat, index) => (
             <div
               key={stat.category}
-              className="bg-stone-50 rounded-2xl p-6 text-center border border-stone-200 hover:shadow-lg transition-all duration-300"
-              style={{
-                animationDelay: `${index * 100}ms`,
-              }}
+              className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 group"
             >
-              <div className="text-4xl font-black text-emerald-600 mb-2">
+              <div className="text-4xl font-bold text-green-600 mb-2 group-hover:scale-110 transition-transform duration-300">
                 {stat.count}
               </div>
-              <h3 className="text-lg font-bold text-stone-900 mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {stat.category}
               </h3>
-              <p className="text-sm text-stone-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {stat.description}
               </p>
             </div>
@@ -97,7 +104,7 @@ export default function TeamSection() {
 
         {/* Company Values */}
         <div className="mb-16">
-          <h3 className="text-4xl font-bold text-stone-900 text-center mb-16">
+          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
             What Drives Us
           </h3>
 
@@ -105,15 +112,15 @@ export default function TeamSection() {
             {companyValues.map((value, index) => (
               <div
                 key={value.title}
-                className="bg-stone-50 rounded-2xl p-8 border border-stone-200 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1"
-                style={{
-                  animationDelay: `${index * 150}ms`,
-                }}
+                className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group"
               >
-                <h4 className="text-xl font-bold text-stone-900 mb-4">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white text-xl">{value.icon}</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-4">
                   {value.title}
                 </h4>
-                <p className="text-stone-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -122,12 +129,12 @@ export default function TeamSection() {
         </div>
 
         {/* Leadership Philosophy */}
-        <div className="bg-gradient-to-r from-stone-800 via-stone-900 to-emerald-900 rounded-3xl p-12 mb-16">
+        <div className="bg-gradient-to-br from-gray-800 to-green-900 rounded-3xl p-12 mb-16 shadow-2xl">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h3 className="text-4xl font-bold mb-8">
+            <h3 className="text-3xl font-bold mb-6">
               Our Leadership Philosophy
             </h3>
-            <p className="text-xl text-stone-200 leading-relaxed mb-8">
+            <p className="text-xl text-gray-200 leading-relaxed mb-8">
               We believe in empowering every team member to contribute their
               unique expertise while maintaining a shared focus on sustainable
               innovation and measurable impact.
@@ -138,7 +145,7 @@ export default function TeamSection() {
                 <h4 className="text-2xl font-bold text-white mb-4">
                   Collaborative
                 </h4>
-                <p className="text-stone-300 text-sm leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Cross-functional teams working together to solve complex
                   agricultural challenges
                 </p>
@@ -147,7 +154,7 @@ export default function TeamSection() {
                 <h4 className="text-2xl font-bold text-white mb-4">
                   Innovative
                 </h4>
-                <p className="text-stone-300 text-sm leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Encouraging creative solutions and continuous learning in
                   emerging technologies
                 </p>
@@ -156,7 +163,7 @@ export default function TeamSection() {
                 <h4 className="text-2xl font-bold text-white mb-4">
                   Impact-Focused
                 </h4>
-                <p className="text-stone-300 text-sm leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Every initiative measured by its positive impact on farmers
                   and the environment
                 </p>
@@ -167,48 +174,52 @@ export default function TeamSection() {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-emerald-50 rounded-3xl p-12 border-2 border-emerald-100">
-            <h3 className="text-3xl font-bold text-stone-900 mb-6">
+          <div className="bg-white rounded-3xl p-12 shadow-2xl border-2 border-green-100">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">
               Join Our Mission
             </h3>
-            <p className="text-lg text-stone-700 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               We're always looking for passionate individuals who share our
               vision of sustainable agriculture and technological innovation.
               Whether you're an engineer, agriculturalist, or sustainability
               expert, there's a place for you on our team.
             </p>
 
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mt-8">
-              <div className="bg-white rounded-xl p-4 border border-emerald-200">
-                <div className="text-emerald-600 font-bold text-lg">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-8">
+              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                <div className="text-green-600 font-bold text-lg mb-2">
                   Remote Friendly
                 </div>
-                <div className="text-stone-600 text-sm">
-                  Flexible work arrangements
-                </div>
+                <div className="text-gray-600">Flexible work arrangements</div>
               </div>
-              <div className="bg-white rounded-xl p-4 border border-emerald-200">
-                <div className="text-emerald-600 font-bold text-lg">
+              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                <div className="text-green-600 font-bold text-lg mb-2">
                   Learning Focus
                 </div>
-                <div className="text-stone-600 text-sm">
+                <div className="text-gray-600">
                   Continuous skill development
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-4 border border-emerald-200">
-                <div className="text-emerald-600 font-bold text-lg">
+              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                <div className="text-green-600 font-bold text-lg mb-2">
                   Impact Work
                 </div>
-                <div className="text-stone-600 text-sm">
+                <div className="text-gray-600">
                   Meaningful environmental projects
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-4 border border-emerald-200">
-                <div className="text-emerald-600 font-bold text-lg">Growth</div>
-                <div className="text-stone-600 text-sm">
+              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                <div className="text-green-600 font-bold text-lg mb-2">
+                  Growth
+                </div>
+                <div className="text-gray-600">
                   Career advancement opportunities
                 </div>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <button className="btn-primary">View Open Positions</button>
             </div>
           </div>
         </div>
