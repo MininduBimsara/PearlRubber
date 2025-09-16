@@ -2,35 +2,7 @@ import { MapPin, Satellite, Shield, TrendingUp } from "lucide-react";
 import Image from "next/image";
 
 export default function DigitalPortfolio() {
-  const features = [
-    {
-      icon: <Satellite className="w-8 h-8" />,
-      title: "Real-time Monitoring",
-      description:
-        "Advanced plantation monitoring and management system providing comprehensive oversight from planting to harvest.",
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
-      stats: ["GPS Boundaries", "Live Updates", "Yield Tracking"],
-    },
-    {
-      icon: <MapPin className="w-8 h-8" />,
-      title: "Interactive Mapping",
-      description:
-        "Individual farm profiles with detailed GPS boundaries, compliance status, and comprehensive yield data analytics.",
-      image:
-        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
-      stats: ["Farm Profiles", "GPS Mapping", "Compliance Status"],
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "EUDR Compliance",
-      description:
-        "Automated EUDR compliance tracking and documentation system ensuring adherence to international deforestation regulations.",
-      image:
-        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
-      stats: ["Automated Reports", "Risk Assessment", "Certification"],
-    },
-  ];
+
 
   return (
     <section className="py-24 bg-white">
@@ -53,57 +25,7 @@ export default function DigitalPortfolio() {
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-            >
-              {/* Image */}
-              <div className="relative mb-6 overflow-hidden rounded-2xl">
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl p-3 text-green-600">
-                  {feature.icon}
-                </div>
-              </div>
 
-              {/* Content */}
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {feature.description}
-              </p>
-
-              {/* Stats */}
-              <div className="space-y-2">
-                {feature.stats.map((stat, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center text-sm text-green-600"
-                  >
-                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></div>
-                    {stat}
-                  </div>
-                ))}
-              </div>
-
-              {/* Hover Arrow */}
-              <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="inline-flex items-center text-green-600 font-medium">
-                  Learn more
-                  <TrendingUp className="ml-2 w-4 h-4" />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
 
         {/* Interactive Map Section */}
         <div className="mt-20 bg-white rounded-3xl p-8 shadow-xl">
