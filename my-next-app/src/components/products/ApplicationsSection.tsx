@@ -1,16 +1,36 @@
 import React from "react";
 import { Smartphone, Monitor, Check } from "lucide-react";
 import Image from "next/image";
-import content from "@/data/content/product.json";
 
 const iconMap = {
   smartphone: Smartphone,
   monitor: Monitor,
 };
 
-export function ApplicationsSection() {
-  const { applicationsSection } = content;
+interface ApplicationsSectionProps {
+  data: {
+    badge: {
+      text: string;
+    };
+    heading: string;
+    subtitle: string;
+    applications: Array<{
+      icon: string;
+      title: string;
+      subtitle: string;
+      description: string;
+      features: Array<{
+        text: string;
+        color: string;
+      }>;
+      gradient: string;
+      iconColor: string;
+      imageUrl: string;
+    }>;
+  };
+}
 
+export function ApplicationsSection({ data }: ApplicationsSectionProps) {
   return (
     <section className="py-20 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -18,19 +38,19 @@ export function ApplicationsSection() {
           <div className="inline-flex items-center px-4 py-2 bg-green-50 rounded-full mb-6">
             <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
             <span className="text-sm font-medium text-green-700">
-              {applicationsSection.badge.text}
+              {data.badge.text}
             </span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            {applicationsSection.heading}
+            {data.heading}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {applicationsSection.subtitle}
+            {data.subtitle}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {applicationsSection.applications.map((app, index) => {
+          {data.applications.map((app, index) => {
             const IconComponent = iconMap[app.icon as keyof typeof iconMap];
             return (
               <div

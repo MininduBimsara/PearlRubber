@@ -1,6 +1,5 @@
 import React from "react";
 import { MapPin, TrendingUp, Users } from "lucide-react";
-import content from "@/data/content/product.json";
 
 const iconMap = {
   mapPin: MapPin,
@@ -8,9 +7,30 @@ const iconMap = {
   users: Users,
 };
 
-export function StatsSection() {
-  const { statsSection } = content;
+interface StatsSectionProps {
+  data: {
+    badge: {
+      text: string;
+    };
+    heading: {
+      main: string;
+      highlighted: string;
+    };
+    subtitle: string;
+    mainStats: Array<{
+      number: string;
+      label: string;
+      icon: string;
+      description: string;
+    }>;
+    additionalMetrics: Array<{
+      number: string;
+      label: string;
+    }>;
+  };
+}
 
+export function StatsSection({ data }: StatsSectionProps) {
   return (
     <section className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -18,22 +38,20 @@ export function StatsSection() {
           <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full mb-6">
             <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
             <span className="text-sm font-medium text-green-800">
-              {statsSection.badge.text}
+              {data.badge.text}
             </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            {statsSection.heading.main}{" "}
-            <span className="text-green-600">
-              {statsSection.heading.highlighted}
-            </span>
+            {data.heading.main}{" "}
+            <span className="text-green-600">{data.heading.highlighted}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {statsSection.subtitle}
+            {data.subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {statsSection.mainStats.map((stat, index) => {
+          {data.mainStats.map((stat, index) => {
             const IconComponent = iconMap[stat.icon as keyof typeof iconMap];
             return (
               <div
@@ -60,7 +78,7 @@ export function StatsSection() {
         {/* Additional metrics */}
         <div className="mt-16 bg-white rounded-3xl p-8 shadow-lg">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {statsSection.additionalMetrics.map((metric, index) => (
+            {data.additionalMetrics.map((metric, index) => (
               <div key={index}>
                 <div className="text-2xl font-bold text-green-600 mb-1">
                   {metric.number}

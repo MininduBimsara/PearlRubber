@@ -1,0 +1,212 @@
+{
+  "hero": {
+    "badge": {
+      "text": "ඊළඟ පරම්පරාවේ කෘෂිකර්මාන්තය",
+      "bgColor": "bg-green-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-500"
+    },
+    "title": "සම්පූර්ණ <span class=\"text-green-600\">වතුකරණ</span> කළමනාකරණ පද්ධතිය",
+    "subtitle": "අපි ශ්‍රී ලංකාවේ තිරසාර රබර් වතුකරණ කළමනාකරණය සඳහා අදිකාල තාක්ෂණික නිෂ්පාදන සහ කෘත්‍රිම බුද්ධිමත්ව විසඳුම් සංවර්ධනය කිරීමට ලොව පුරා ව්‍යාපාර, ආරම්භක සහ රජයන් සමඟ හවුල් වෙමු.",
+    "cta": {
+      "primary": {
+        "text": "ඩෑෂ්බෝඩ් ගවේෂණය කරන්න",
+        "icon": "ChevronRight"
+      },
+      "secondary": {
+        "text": "නිරූපණය නරඹන්න",
+        "icon": "Play"
+      }
+    },
+    "stats": [
+      {
+        "value": "30K+",
+        "label": "ලියාපදිංචි ගොවිපල"
+      },
+      {
+        "value": "500K",
+        "label": "අධීක්ෂණය වන හෙක්ටර්"
+      },
+      {
+        "value": "95%",
+        "label": "නිරවද්‍යතා අනුපාතය"
+      }
+    ],
+    "backgroundImage": "https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?w=1920&h=1080&fit=crop",
+    "dashboardImage": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=400&fit=crop",
+    "floatingCards": [
+      {
+        "position": "top-4 left-4",
+        "icon": "MapPin",
+        "title": "සජීවී අධීක්ෂණය",
+        "subtitle": "247.8 හෙක්ටර් ලුහුබඳිමින්",
+        "status": "ක්‍රියාශීලී",
+        "statusColor": "text-green-600"
+      },
+      {
+        "position": "bottom-4 right-4",
+        "icon": "Shield",
+        "title": "EUDR තත්ත්වය",
+        "subtitle": "100% අනුකූල",
+        "status": "අවසන් වරට සත්‍යාපනය: පැය 2කට පෙර",
+        "statusColor": "text-green-600"
+      },
+      {
+        "position": "top-4 right-4",
+        "icon": "TrendingUp",
+        "title": "විශ්ලේෂණ",
+        "metrics": [
+          {
+            "value": "95%",
+            "label": "නිරවද්‍යතාව",
+            "color": "text-green-600"
+          },
+          {
+            "value": "24/7",
+            "label": "අවකාශීය කාලය",
+            "color": "text-blue-600"
+          }
+        ]
+      }
+    ]
+  },
+  "digitalPortfolio": {
+    "badge": {
+      "text": "ඩිජිටල් කළඹ",
+      "bgColor": "bg-green-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-500"
+    },
+    "title": "පුළුල් වතුකරණ <span class=\"text-green-600\">කළමනාකරණය</span>",
+    "subtitle": "ශ්‍රී ලංකා රබර් වතුකරණ වල පුළුල් අධීක්ෂණය සඳහා ප්‍රගත ඩිජිටල් මෙවලම් සහ තත්ත්ව කාලීන අධීක්ෂණ පද්ධති.",
+    "interactiveMap": {
+      "title": "අන්තර්ක්‍රියාකාරී වතුකරණ ජාලය",
+      "description": "ශ්‍රී ලංකාව පුරා ලියාපදිංචි වතුකරණ 30,000+ ක තත්ත්ව කාලීන දෘශ්‍යකරණය",
+      "image": "/rubber.jpg",
+      "liveIndicator": {
+        "text": "සජීවී දත්ත",
+        "dotColor": "bg-green-500"
+      }
+    }
+  },
+  "smartMonitoring": {
+    "badge": {
+      "text": "දක්ෂ තාක්ෂණය",
+      "bgColor": "bg-blue-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-500"
+    },
+    "title": "ප්‍රගත අධීක්ෂණය සහ <span class=\"text-green-600\">විශ්ලේෂණ</span>",
+    "subtitle": "ප්‍රශස්ත වතුකරණ කළමනාකරණය සහ පුරෝකතන අවබෝධයන් සඳහා IoT සංවේදක, චන්ද්‍රිකා ඒකාබද්ධකිරීම සහ AI බලගැන්වූ විශ්ලේෂණ භාවිතා කිරීම.",
+    "features": [
+      {
+        "icon": "Satellite",
+        "title": "IoT සහ චන්ද්‍රිකා ඒකාබද්ධකිරීම",
+        "description": "තත්ත්ව කාලීන පරිසර සහ වතුකරණ සෞඛ්‍ය දත්ත සපයන ප්‍රගත සංවේදක ජාල සහ චන්ද්‍රිකා දත්ත ඒකාබද්ධකිරීම.",
+        "image": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400&h=300&fit=crop",
+        "metrics": ["24/7 අධීක්ෂණය", "තත්ත්ව කාලීන දත්ත", "පරිසර සංවේදක"]
+      },
+      {
+        "icon": "Brain",
+        "title": "AI බලගැන්වූ විශ්ලේෂණ",
+        "description": "අස්වැන්න පුරෝකථනය, සෞඛ්‍ය අධීක්ෂණය සහ වතුකරණ වත්කම් වල පුරෝකතන නඩත්තුව සඳහා යන්ත්‍ර ඉගෙනුම් ඇල්ගොරිතම.",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+        "metrics": ["95% නිරවද්‍යතාව", "පුරෝකතන ආකෘති", "දක්ෂ අවබෝධයන්"]
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "අවදානම් කළමනාකරණය",
+        "description": "කාලගුණය, රෝග සහ වෙළඳපොළ උච්චාවචනයන් සඳහා පුළුල් අවදානම් තක්සේරුව සහ පූර්ව අනතුරු ඇඟවීමේ පද්ධති.",
+        "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop",
+        "metrics": [
+          "පූර්ව අනතුරු ඇඟවීම්",
+          "අවදානම් තක්සේරුව",
+          "වැළැක්වීමේ ප්‍රතිකාර"
+        ]
+      }
+    ],
+    "dashboard": {
+      "title": "තත්ත්ව කාලීන විශ්ලේෂණ ඩෑෂ්බෝඩ්",
+      "description": "අපගේ පුළුල් විශ්ලේෂණ වේදිකාව සමඟ වතුකරණ සෞඛ්‍යය අධීක්ෂණය කරන්න, අස්වැන්න පුරෝකථන ලුහුබඳින්න සහ අවදානම් කළමනාකරණය කරන්න.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "stats": [
+        {
+          "value": "98.5%",
+          "label": "පද්ධති ක්‍රියාකාරිත්වය",
+          "color": "text-green-400"
+        },
+        {
+          "value": "30+",
+          "label": "දත්ත ලක්ෂ්‍ය",
+          "color": "text-blue-400"
+        }
+      ]
+    }
+  },
+  "farmerNetwork": {
+    "badge": {
+      "text": "ගොවි ජාලය",
+      "bgColor": "bg-green-100",
+      "textColor": "text-green-800",
+      "dotColor": "bg-green-600"
+    },
+    "title": "ශ්‍රී ලංකා <span class=\"text-green-600\">ගොවීන්</span> සවිබල ගැන්වීම",
+    "subtitle": "තිරසාර වර්ධනය සහ සමෘද්ධිය සඳහා තාක්ෂණය, පුහුණුව සහ පුළුල් සහාය පද්ධති හරහා.",
+    "features": [
+      {
+        "icon": "Users",
+        "title": "කුඩා ගොවීන්ගේ ඒකාබද්ධකිරීම",
+        "description": "අභිරුචි සහාය සහ සම්පත් සහිත කුඩා ගොවීන් 30,000+ ක් ඩිජිටල් පරිසර පද්ධතියට පුළුල් ඒකාබද්ධකිරීම.",
+        "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=300&fit=crop",
+        "benefits": [
+          "ඩිජිටල් ලියාපදිංචිකිරීම",
+          "පැතිකඩ කළමනාකරණය",
+          "ගෙවීම් සැකසුම"
+        ]
+      },
+      {
+        "icon": "BookOpen",
+        "title": "පුහුණුව සහ ව්‍යාප්තිය",
+        "description": "ගොවිතැන් ක්‍රම වැඩිදියුණු කිරීම සහ ඵලදායිතාව වර්ධනය කිරීම සඳහා පුළුල් පුහුණු වැඩසටහන් සහ ව්‍යාප්ති සේවා.",
+        "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop",
+        "benefits": ["හොඳම ක්‍රම", "තිරසාර ශිල්පක්‍රම", "සහතිකතන වැඩසටහන්"]
+      },
+      {
+        "icon": "Smartphone",
+        "title": "ජංගම වේදිකාව",
+        "description": "ගොවීන්ට තොරතුරු ලබා ගැනීම සහ මෙහෙයුම් කළමනාකරණය කිරීම සඳහා නොබැඳි හැකියාවන් සහිත පරිශීලක-හිතකාමී ජංගම යෙදුම.",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop",
+        "benefits": ["නොබැඳි සමකාලීනකරණය", "කාලගුණ යාවත්කාලීන", "ප්‍රජා සංසද"]
+      }
+    ],
+    "mobileApp": {
+      "title": "FarmerConnect ජංගම යෙදුම",
+      "description": "අන්තර්ගත අතුරුමුඛයක්, නොබැඳි හැකියාවන් සහ පුළුල් ගොවිතැන් මෙවලම් සහිත ශ්‍රී ලංකා රබර් ගොවීන් සඳහා විශේෂයෙන් නිර්මාණය කර ඇත.",
+      "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=600&fit=crop",
+      "stats": [
+        {
+          "value": "99.9%",
+          "label": "යෙදුම් ක්‍රියාකාරිත්වය",
+          "bgColor": "bg-green-50",
+          "valueColor": "text-green-600",
+          "labelColor": "text-green-700"
+        },
+        {
+          "value": "4.8★",
+          "label": "පරිශීලක ශ්‍රේණිගත කිරීම",
+          "bgColor": "bg-amber-50",
+          "valueColor": "text-amber-600",
+          "labelColor": "text-amber-700"
+        }
+      ],
+      "cta": {
+        "text": "යෙදුම බාගන්න",
+        "icon": "Smartphone"
+      },
+      "uiElement": {
+        "title": "අදයේ අස්වැන්න",
+        "value": "2.8 MT"
+      }
+    }
+  }
+}

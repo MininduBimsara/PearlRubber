@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
-import Navbar from "@/components/Shared/NavBar";
 import { Footer } from "@/components/Shared/Footer";
+import ClientLayout from "@/components/ClientLayout";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,11 +32,8 @@ export default function RootLayout({
         />
       </head>
       <body>
-      <Navbar />
-      
-      {children}
-      
-      <Footer />
+        <ClientLayout>{children}</ClientLayout>
+        <Footer />
       </body>
     </html>
   );

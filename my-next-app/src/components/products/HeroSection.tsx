@@ -8,7 +8,6 @@ import {
   Users,
   BarChart3,
 } from "lucide-react";
-import content from "@/data/content/product.json";
 
 const iconMap = {
   satellite: Satellite,
@@ -25,9 +24,36 @@ const colorMap = {
   emerald: "bg-emerald-600",
 };
 
-export function HeroSection() {
-  const { heroSection } = content;
+interface HeroSectionProps {
+  data: {
+    badge: {
+      text: string;
+    };
+    heading: {
+      main: string;
+      highlighted: string;
+      continuation: string;
+    };
+    subtitle: string;
+    backgroundImage: string;
+    featureCards: Array<{
+      title: string;
+      description: string;
+      icon: string;
+      color: string;
+    }>;
+    stats: Array<{
+      number: string;
+      label: string;
+    }>;
+    cta: {
+      primary: string;
+      secondary: string;
+    };
+  };
+}
 
+export function HeroSection({ data }: HeroSectionProps) {
   return (
     <section className="pt-32 pb-20 px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
@@ -37,23 +63,21 @@ export function HeroSection() {
           <div className="inline-flex items-center px-4 py-2 bg-green-50 rounded-full mb-6">
             <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
             <span className="text-sm font-medium text-green-700">
-              {heroSection.badge.text}
+              {data.badge.text}
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            {heroSection.heading.main}{" "}
-            <span className="text-green-600">
-              {heroSection.heading.highlighted}
-            </span>
+            {data.heading.main}{" "}
+            <span className="text-green-600">{data.heading.highlighted}</span>
             <br />
-            {heroSection.heading.continuation}
+            {data.heading.continuation}
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            {heroSection.subtitle}
+            {data.subtitle}
           </p>
         </div>
 
@@ -63,7 +87,7 @@ export function HeroSection() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('${heroSection.backgroundImage}')`,
+              backgroundImage: `url('${data.backgroundImage}')`,
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-green-50/80 to-gray-50/80"></div>
@@ -83,7 +107,7 @@ export function HeroSection() {
             </div>
 
             {/* Product Feature Circles */}
-            {heroSection.featureCards.map((feature, index) => {
+            {data.featureCards.map((feature, index) => {
               const IconComponent =
                 iconMap[feature.icon as keyof typeof iconMap];
               const positions = [
@@ -113,7 +137,7 @@ export function HeroSection() {
           </div>
 
           {/* Feature Cards */}
-          {heroSection.featureCards.map((feature, index) => {
+          {data.featureCards.map((feature, index) => {
             const IconComponent = iconMap[feature.icon as keyof typeof iconMap];
             const positions = [
               "top-6 left-6",
@@ -154,7 +178,7 @@ export function HeroSection() {
 
         {/* Product Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-gray-200">
-          {heroSection.stats.map((stat, index) => (
+          {data.stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl font-bold text-green-600 mb-2">
                 {stat.number}
@@ -167,10 +191,8 @@ export function HeroSection() {
         {/* CTA Section */}
         <div className="text-center mt-12">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">{heroSection.cta.primary}</button>
-            <button className="btn-secondary">
-              {heroSection.cta.secondary}
-            </button>
+            <button className="btn-primary">{data.cta.primary}</button>
+            <button className="btn-secondary">{data.cta.secondary}</button>
           </div>
         </div>
       </div>

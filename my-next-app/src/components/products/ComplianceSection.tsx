@@ -1,20 +1,37 @@
 // components/products/ComplianceSection.tsx
 import React from "react";
 import { Check } from "lucide-react";
-import content from "@/data/content/product.json";
 
-export function ComplianceSection() {
-  const { complianceSection } = content;
+interface ComplianceSectionProps {
+  data: {
+    heading: string;
+    subtitle: string;
+    features: Array<{
+      title: string;
+      description: string;
+      color: string;
+    }>;
+    verificationProcess: {
+      title: string;
+      description: string;
+      points: Array<{
+        title: string;
+        description: string;
+      }>;
+    };
+  };
+}
 
+export function ComplianceSection({ data }: ComplianceSectionProps) {
   return (
     <section className="py-20 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            {complianceSection.heading}
+            {data.heading}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {complianceSection.subtitle}
+            {data.subtitle}
           </p>
         </div>
 
@@ -23,7 +40,7 @@ export function ComplianceSection() {
           <div className="relative">
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <div className="space-y-4">
-                {complianceSection.features.map((feature, index) => (
+                {data.features.map((feature, index) => (
                   <div
                     key={index}
                     className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg"
@@ -55,28 +72,26 @@ export function ComplianceSection() {
           {/* Content */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900">
-              {complianceSection.verificationProcess.title}
+              {data.verificationProcess.title}
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              {complianceSection.verificationProcess.description}
+              {data.verificationProcess.description}
             </p>
             <div className="space-y-4">
-              {complianceSection.verificationProcess.points.map(
-                (point, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <Check
-                      size={20}
-                      className="text-green-500 mt-0.5 flex-shrink-0"
-                    />
-                    <div>
-                      <div className="font-semibold text-gray-900">
-                        {point.title}
-                      </div>
-                      <div className="text-gray-600">{point.description}</div>
+              {data.verificationProcess.points.map((point, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <Check
+                    size={20}
+                    className="text-green-500 mt-0.5 flex-shrink-0"
+                  />
+                  <div>
+                    <div className="font-semibold text-gray-900">
+                      {point.title}
                     </div>
+                    <div className="text-gray-600">{point.description}</div>
                   </div>
-                )
-              )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
