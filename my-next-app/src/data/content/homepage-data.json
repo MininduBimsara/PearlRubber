@@ -1,352 +1,216 @@
 {
-  "platform": {
-    "name": "EcoRubber",
-    "tagline": "Sustainable Rubber Tree Plantations",
-    "description": "Comprehensive platform for sustainable rubber farming that supports livelihoods and promotes eco-friendly industries through advanced farming practices.",
-    "version": "2.1.0",
-    "lastUpdated": "2024-09-13"
-  },
   "hero": {
     "badge": {
-      "text": "Sustainable Farming Platform",
-      "showIndicator": true
+      "text": "Next Generation Agriculture",
+      "bgColor": "bg-green-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-500"
     },
-    "headline": {
-      "line1": "Rubber Trees:",
-      "line2": "Sustaining Nature,",
-      "subtitle": "Empowering Communities"
-    },
-    "description": "Explore how rubber tree plantations support livelihoods and promote eco-friendly industries through sustainable farming practices.",
-    "buttons": {
+    "title": "Complete <span class=\"text-green-600\">Plantation</span> Management System",
+    "subtitle": "We partner with enterprises, startups, and governments worldwide to develop cutting-edge technology products and Artificial Intelligence solutions for sustainable rubber plantation management in Sri Lanka.",
+    "cta": {
       "primary": {
-        "text": "Learn More 🌱",
-        "action": "learn_more"
+        "text": "Explore Dashboard",
+        "icon": "ChevronRight"
       },
       "secondary": {
-        "text": "Get Involved",
-        "action": "get_involved"
+        "text": "Watch Demo",
+        "icon": "Play"
       }
     },
-    "trustIndicators": [
+    "stats": [
       {
-        "value": "50,000+",
-        "label": "Trees Planted"
+        "value": "30K+",
+        "label": "Registered Farms"
       },
       {
-        "value": "98%",
-        "label": "Sustainability Rate"
+        "value": "500K",
+        "label": "Hectares Monitored"
       },
       {
-        "value": "12",
-        "label": "Countries Served"
+        "value": "95%",
+        "label": "Accuracy Rate"
+      }
+    ],
+    "backgroundImage": "https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?w=1920&h=1080&fit=crop",
+    "dashboardImage": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=400&fit=crop",
+    "floatingCards": [
+      {
+        "position": "top-4 left-4",
+        "icon": "MapPin",
+        "title": "Live Monitoring",
+        "subtitle": "247.8 hectares tracked",
+        "status": "Active",
+        "statusColor": "text-green-600"
       },
       {
-        "value": "1,200",
-        "label": "Farming Communities"
+        "position": "bottom-4 right-4",
+        "icon": "Shield",
+        "title": "EUDR Status",
+        "subtitle": "100% Compliant",
+        "status": "Last verified: 2 hours ago",
+        "statusColor": "text-green-600"
+      },
+      {
+        "position": "top-4 right-4",
+        "icon": "TrendingUp",
+        "title": "Analytics",
+        "metrics": [
+          {
+            "value": "95%",
+            "label": "Accuracy",
+            "color": "text-green-600"
+          },
+          {
+            "value": "24/7",
+            "label": "Uptime",
+            "color": "text-blue-600"
+          }
+        ]
       }
     ]
   },
-  "features": [
-    {
-      "id": "sustainable-farming",
-      "title": "Sustainability in Farming",
-      "description": "Advanced eco-friendly farming techniques that preserve biodiversity while maximizing yield.",
-      "benefits": [
-        "Biodiversity preservation",
-        "Soil health optimization",
-        "Water conservation"
-      ],
-      "status": "active",
-      "icon": "🌳",
-      "category": "farming"
+  "digitalPortfolio": {
+    "badge": {
+      "text": "Digital Portfolio",
+      "bgColor": "bg-green-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-500"
     },
-    {
-      "id": "eco-products",
-      "title": "Eco-Friendly Products",
-      "description": "Natural rubber products that reduce environmental impact across multiple industries.",
-      "benefits": [
-        "Zero harmful chemicals",
-        "Biodegradable materials",
-        "Carbon-neutral production"
-      ],
-      "status": "active",
-      "icon": "🛠️",
-      "category": "products"
-    },
-    {
-      "id": "community-impact",
-      "title": "Community Impact",
-      "description": "Supporting local communities through fair trade practices and sustainable employment.",
-      "benefits": [
-        "Fair wage guarantees",
-        "Skills development",
-        "Healthcare support"
-      ],
-      "status": "active",
-      "icon": "🤝",
-      "category": "community"
-    },
-    {
-      "id": "global-reach",
-      "title": "Global Reach",
-      "description": "Connecting sustainable rubber farming with international markets and standards.",
-      "benefits": [
-        "International certification",
-        "Global distribution",
-        "Quality assurance"
-      ],
-      "status": "active",
-      "icon": "🌍",
-      "category": "global"
-    }
-  ],
-  "statistics": [
-    {
-      "id": "trees-planted",
-      "value": "50,000+",
-      "label": "Trees Planted",
-      "description": "Rubber trees planted across sustainable plantations worldwide",
-      "trend": "up",
-      "trendValue": "+15% this quarter",
-      "category": "environment",
-      "lastUpdated": "2024-09-01"
-    },
-    {
-      "id": "sustainability-rate",
-      "value": "98%",
-      "label": "Sustainability Rate",
-      "description": "Plantations meeting our strict environmental standards",
-      "trend": "stable",
-      "trendValue": "Consistently high",
-      "category": "performance",
-      "lastUpdated": "2024-09-10"
-    },
-    {
-      "id": "countries-served",
-      "value": "12",
-      "label": "Countries Served",
-      "description": "Nations where our sustainable rubber programs operate",
-      "trend": "up",
-      "trendValue": "+3 new markets",
-      "category": "expansion",
-      "lastUpdated": "2024-08-15"
-    },
-    {
-      "id": "communities",
-      "value": "1,200",
-      "label": "Farming Communities",
-      "description": "Local communities supported through our programs",
-      "trend": "up",
-      "trendValue": "+200 this year",
-      "category": "impact",
-      "lastUpdated": "2024-09-05"
-    }
-  ],
-  "treeInfo": [
-    {
-      "id": "latex-collection",
-      "title": "Latex Collection",
-      "description": "Sustainable tapping techniques that preserve tree health while maximizing latex yield.",
-      "position": "top-[20%] right-[10%]",
-      "side": "left"
-    },
-    {
-      "id": "natural-rubber",
-      "title": "Natural Rubber",
-      "description": "High-quality natural rubber production through traditional and modern methods.",
-      "position": "top-[40%] left-[-10%]",
-      "side": "right"
-    },
-    {
-      "id": "sustainable-growth",
-      "title": "Sustainable Growth",
-      "description": "Tree cultivation practices that ensure long-term plantation sustainability.",
-      "position": "top-[65%] right-[15%]",
-      "side": "left"
-    },
-    {
-      "id": "root-system",
-      "title": "Root System",
-      "description": "Advanced root management for soil conservation and tree longevity.",
-      "position": "bottom-[10%] left-[20%]",
-      "side": "right"
-    }
-  ],
-  "partners": [
-    {
-      "id": "bridgestone",
-      "name": "Bridgestone",
-      "logo": "B",
-      "description": "Leading tire manufacturer committed to sustainable rubber sourcing",
-      "partnership": "Sustainable Supply Chain Partner",
-      "since": "2022",
-      "region": "Global",
-      "status": "active",
-      "tier": "strategic"
-    },
-    {
-      "id": "michelin",
-      "name": "Michelin",
-      "logo": "M",
-      "description": "Premium tire brand focusing on environmental responsibility",
-      "partnership": "Environmental Innovation Partner",
-      "since": "2023",
-      "region": "Europe",
-      "status": "active",
-      "tier": "premium"
-    },
-    {
-      "id": "continental",
-      "name": "Continental",
-      "logo": "C",
-      "description": "German automotive supplier promoting sustainable practices",
-      "partnership": "Technology Integration Partner",
-      "since": "2023",
-      "region": "Europe",
-      "status": "active",
-      "tier": "premium"
-    },
-    {
-      "id": "pirelli",
-      "name": "Pirelli",
-      "logo": "P",
-      "description": "Italian tire manufacturer with premium sustainability standards",
-      "partnership": "Quality Assurance Partner",
-      "since": "2024",
-      "region": "Europe",
-      "status": "active",
-      "tier": "standard"
-    }
-  ],
-  "testimonials": [
-    {
-      "id": "bridgestone_maria",
-      "quote": "EcoRubber has revolutionized our approach to sustainable sourcing. The quality and environmental impact are outstanding.",
-      "author": "Maria Rodriguez",
-      "title": "Sustainability Director",
-      "company": "Bridgestone",
-      "companyId": "bridgestone",
-      "rating": 5,
-      "featured": true,
-      "date": "2024-08-15"
-    },
-    {
-      "id": "michelin_jean",
-      "quote": "Working with EcoRubber ensures our supply chain aligns with our environmental commitments.",
-      "author": "Jean Dupont",
-      "title": "Supply Chain Manager",
-      "company": "Michelin",
-      "companyId": "michelin",
-      "rating": 5,
-      "featured": true,
-      "date": "2024-07-22"
-    },
-    {
-      "id": "continental_anna",
-      "quote": "The community impact and product quality make EcoRubber our preferred partner.",
-      "author": "Anna Schmidt",
-      "title": "Procurement Lead",
-      "company": "Continental",
-      "companyId": "continental",
-      "rating": 5,
-      "featured": true,
-      "date": "2024-06-10"
-    }
-  ],
-  "sustainability": {
-    "certifications": [
-      {
-        "name": "FSC Certified",
-        "description": "Forest Stewardship Council certification for responsible forest management",
-        "status": "active",
-        "validUntil": "2025-12-30"
-      },
-      {
-        "name": "Fair Trade Certified",
-        "description": "Ensuring fair wages and working conditions for farmers",
-        "status": "active",
-        "validUntil": "2025-06-15"
-      },
-      {
-        "name": "Organic Certified",
-        "description": "Certified organic farming practices without harmful chemicals",
-        "status": "active",
-        "validUntil": "2025-03-20"
+    "title": "Comprehensive Plantation <span class=\"text-green-600\">Management</span>",
+    "subtitle": "Advanced digital tools and real-time monitoring systems for comprehensive oversight of Sri Lankan rubber plantations.",
+    "interactiveMap": {
+      "title": "Interactive Plantation Network",
+      "description": "Real-time visualization of 30,000+ registered plantations across Sri Lanka",
+      "image": "/rubber.jpg",
+      "liveIndicator": {
+        "text": "Live Data",
+        "dotColor": "bg-green-500"
       }
-    ],
-    "environmental": {
-      "carbonNeutral": true,
-      "waterConservation": "40% reduction in water usage",
-      "biodiversity": "95% native species preservation",
-      "soilHealth": "Regenerative farming practices"
     }
   },
-  "contactForm": {
-    "title": "Join Our Sustainable Mission",
-    "description": "Connect with our sustainability experts to learn how you can be part of the rubber tree revolution.",
-    "fields": [
+  "smartMonitoring": {
+    "badge": {
+      "text": "Smart Technology",
+      "bgColor": "bg-blue-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-500"
+    },
+    "title": "Advanced Monitoring & <span class=\"text-green-600\">Analytics</span>",
+    "subtitle": "Leveraging IoT sensors, satellite integration, and AI-powered analytics for optimal plantation management and predictive insights.",
+    "features": [
       {
-        "id": "fullName",
-        "label": "Your Name",
-        "type": "text",
-        "placeholder": "Enter your full name",
-        "required": true
-      },
-      {
-        "id": "email",
-        "label": "Email Address",
-        "type": "email",
-        "placeholder": "your.email@company.com",
-        "required": true
-      },
-      {
-        "id": "interest",
-        "label": "Interest Area",
-        "type": "select",
-        "required": true,
-        "options": [
-          { "value": "farming", "label": "Sustainable Farming" },
-          { "value": "products", "label": "Eco-Friendly Products" },
-          { "value": "partnership", "label": "Business Partnership" },
-          { "value": "investment", "label": "Investment Opportunities" },
-          { "value": "other", "label": "Other" }
+        "icon": "Satellite",
+        "title": "IoT & Satellite Integration",
+        "description": "Advanced sensor networks and satellite data integration providing real-time environmental and plantation health data.",
+        "image": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400&h=300&fit=crop",
+        "metrics": [
+          "24/7 Monitoring",
+          "Real-time Data",
+          "Environmental Sensors"
         ]
       },
       {
-        "id": "message",
-        "label": "Message (Optional)",
-        "type": "textarea",
-        "placeholder": "Tell us about your interest in sustainable rubber...",
-        "required": false,
-        "maxLength": 500
+        "icon": "Brain",
+        "title": "AI-Powered Analytics",
+        "description": "Machine learning algorithms for yield forecasting, health monitoring, and predictive maintenance of plantation assets.",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+        "metrics": ["95% Accuracy", "Predictive Models", "Smart Insights"]
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Risk Management",
+        "description": "Comprehensive risk assessment and early warning systems for weather, diseases, and market fluctuations.",
+        "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop",
+        "metrics": ["Early Warnings", "Risk Assessment", "Preventive Care"]
       }
     ],
-    "submitText": "Get Started Today",
-    "benefits": [
-      "Free sustainability consultation",
-      "Custom implementation plan",
-      "Environmental impact assessment"
-    ]
-  },
-  "settings": {
-    "animations": {
-      "enabled": true,
-      "staggerDelay": 100,
-      "intersectionThreshold": 0.1
-    },
-    "theme": {
-      "primaryColor": "#318162",
-      "secondaryColor": "#267549",
-      "accentColor": "#F9B75D"
+    "dashboard": {
+      "title": "Real-time Analytics Dashboard",
+      "description": "Monitor plantation health, track yield predictions, and manage risks with our comprehensive analytics platform.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "stats": [
+        {
+          "value": "98.5%",
+          "label": "System Uptime",
+          "color": "text-green-400"
+        },
+        {
+          "value": "30+",
+          "label": "Data Points",
+          "color": "text-blue-400"
+        }
+      ]
     }
   },
-  "metadata": {
-    "totalPartners": 4,
-    "activePartnerships": 4,
-    "averageRating": 5.0,
-    "lastUpdated": "2024-09-13T15:45:00Z",
-    "nextUpdate": "2024-09-20T10:30:00Z",
-    "dataSource": "Sustainability Analytics Platform",
-    "updateFrequency": "weekly"
+  "farmerNetwork": {
+    "badge": {
+      "text": "Farmer Network",
+      "bgColor": "bg-green-100",
+      "textColor": "text-green-800",
+      "dotColor": "bg-green-600"
+    },
+    "title": "Empowering Sri Lankan <span class=\"text-green-600\">Farmers</span>",
+    "subtitle": "Through technology, training, and comprehensive support systems for sustainable growth and prosperity.",
+    "features": [
+      {
+        "icon": "Users",
+        "title": "Smallholder Integration",
+        "description": "Comprehensive integration of 30,000+ smallholder farmers into the digital ecosystem with tailored support and resources.",
+        "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=300&fit=crop",
+        "benefits": [
+          "Digital Registration",
+          "Profile Management",
+          "Payment Processing"
+        ]
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Training & Extension",
+        "description": "Comprehensive training programs and extension services to enhance farming practices and increase productivity.",
+        "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop",
+        "benefits": [
+          "Best Practices",
+          "Sustainable Techniques",
+          "Certification Programs"
+        ]
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Mobile Platform",
+        "description": "User-friendly mobile application with offline capabilities for farmers to access information and manage operations.",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop",
+        "benefits": ["Offline Sync", "Weather Updates", "Community Forums"]
+      }
+    ],
+    "mobileApp": {
+      "title": "FarmerConnect Mobile App",
+      "description": "Designed specifically for Sri Lankan rubber farmers with intuitive interface, offline capabilities, and comprehensive farming tools.",
+      "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=600&fit=crop",
+      "stats": [
+        {
+          "value": "99.9%",
+          "label": "App Uptime",
+          "bgColor": "bg-green-50",
+          "valueColor": "text-green-600",
+          "labelColor": "text-green-700"
+        },
+        {
+          "value": "4.8★",
+          "label": "User Rating",
+          "bgColor": "bg-amber-50",
+          "valueColor": "text-amber-600",
+          "labelColor": "text-amber-700"
+        }
+      ],
+      "cta": {
+        "text": "Download App",
+        "icon": "Smartphone"
+      },
+      "uiElement": {
+        "title": "Today's Yield",
+        "value": "2.8 MT"
+      }
+    }
   }
 }

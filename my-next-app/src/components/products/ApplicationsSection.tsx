@@ -1,59 +1,16 @@
 import React from "react";
 import { Smartphone, Monitor, Check } from "lucide-react";
 import Image from "next/image";
+import content from "@/data/content/product.json";
 
-interface AppFeature {
-  text: string;
-  color: string;
-}
-
-interface AppConfig {
-  icon: React.ElementType;
-  title: string;
-  subtitle: string;
-  description: string;
-  features: AppFeature[];
-  gradient: string;
-  iconColor: string;
-  imageUrl: string; // Added image URL
-}
-
-const applications: AppConfig[] = [
-  {
-    icon: Smartphone,
-    title: "Mobile Application",
-    subtitle: "Field data collection made simple",
-    description:
-      "Our mobile application revolutionizes data collection for natural rubber processing factories in Sri Lanka. Designed with an intuitive interface, the application enables straightforward information gathering directly from farmers. Recognizing the challenges of working in remote plantation areas, we have engineered the application to function seamlessly offline.",
-    features: [
-      { text: "Offline data collection capability", color: "text-green-500" },
-      { text: "GPS-enabled boundary mapping", color: "text-green-500" },
-      { text: "Multi-language support", color: "text-green-500" },
-    ],
-    gradient: "bg-gradient-to-br from-green-50 to-blue-50",
-    iconColor: "bg-gradient-to-br from-green-500 to-green-600",
-    imageUrl:
-      "/mobile.jpg", // Mobile app mockup
-  },
-  {
-    icon: Monitor,
-    title: "Web Dashboard",
-    subtitle: "Comprehensive data management",
-    description:
-      "The RubberWay web dashboard serves as a powerful data management and compliance tool specifically designed for Sri Lankan rubber processing facilities. It aggregates all required information, providing a centralized platform for comprehensive data oversight. Compliance checks run seamlessly, allowing users to quickly identify and address potential issues.",
-    features: [
-      { text: "Real-time compliance monitoring", color: "text-blue-500" },
-      { text: "Advanced analytics and reporting", color: "text-blue-500" },
-      { text: "Multi-user access control", color: "text-blue-500" },
-    ],
-    gradient: "bg-gradient-to-br from-blue-50 to-purple-50",
-    iconColor: "bg-gradient-to-br from-blue-500 to-blue-600",
-    imageUrl:
-      "/desktop.jpg", // Desktop dashboard mockup
-  },
-];
+const iconMap = {
+  smartphone: Smartphone,
+  monitor: Monitor,
+};
 
 export function ApplicationsSection() {
+  const { applicationsSection } = content;
+
   return (
     <section className="py-20 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -61,22 +18,20 @@ export function ApplicationsSection() {
           <div className="inline-flex items-center px-4 py-2 bg-green-50 rounded-full mb-6">
             <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
             <span className="text-sm font-medium text-green-700">
-              Applications Suite
+              {applicationsSection.badge.text}
             </span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Powerful Applications Suite
+            {applicationsSection.heading}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Complete ecosystem of mobile and web applications designed
-            specifically for Sri Lankan rubber processing facilities and
-            farmers.
+            {applicationsSection.subtitle}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {applications.map((app, index) => {
-            const IconComponent = app.icon;
+          {applicationsSection.applications.map((app, index) => {
+            const IconComponent = iconMap[app.icon as keyof typeof iconMap];
             return (
               <div
                 key={index}

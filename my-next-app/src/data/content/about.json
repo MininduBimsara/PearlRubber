@@ -1,158 +1,156 @@
 {
-  "mission": {
-    "title": "Our Mission",
-    "description": "Empowering Sri Lanka with intelligent geo-mapping solutions for sustainable rubber development and EUDR compliance",
-    "vision": "To become Sri Lanka's leading geo-mapping platform, transforming how the rubber industry approaches sustainability, compliance, and agricultural innovation.",
-    "focusAreas": [
+  "hero": {
+    "badge": {
+      "text": "About EcoRubber",
+      "bgColor": "bg-green-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-600"
+    },
+    "title": "Pioneering <span class=\"text-green-600\">Sustainable</span> Rubber<br />Industry Solutions",
+    "subtitle": "We combine cutting-edge technology with deep agricultural expertise to help Sri Lankan rubber plantations achieve EUDR compliance while supporting farmer communities and environmental conservation.",
+    "stats": [
       {
-        "title": "Agriculture Monitoring",
-        "description": "Advanced monitoring of rubber plantations and crop areas to prevent unauthorized encroachment and optimize yield management across Sri Lanka's agricultural regions.",
-        "category": "Primary Focus"
+        "value": "2019",
+        "label": "Founded"
       },
       {
-        "title": "Flood Management",
-        "description": "Real-time flood risk assessment and early warning systems to protect rubber cultivation areas and surrounding communities from monsoon-related damages.",
-        "category": "Risk Mitigation"
+        "value": "30+",
+        "label": "Team Members"
       },
       {
-        "title": "Land Protection",
-        "description": "Comprehensive land use mapping and protection protocols to preserve valuable agricultural land and maintain sustainable rubber production practices.",
-        "category": "Conservation"
+        "value": "500K+",
+        "label": "Hectares Mapped"
       },
       {
-        "title": "Urban Planning",
-        "description": "Strategic integration of agricultural zones with urban development plans to balance economic growth with environmental sustainability.",
-        "category": "Development"
-      }
-    ],
-    "coreValues": [
-      {
-        "title": "Sustainability",
-        "description": "Environmental stewardship drives every decision we make, ensuring rubber production preserves Sri Lanka's natural heritage.",
-        "color": "emerald"
-      },
-      {
-        "title": "Innovation",
-        "description": "Cutting-edge technology and data analytics revolutionize traditional agricultural practices for maximum efficiency.",
-        "color": "stone"
-      },
-      {
-        "title": "Transparency",
-        "description": "Complete visibility into supply chains and farming practices builds trust with global partners and ensures compliance.",
-        "color": "amber"
+        "value": "100%",
+        "label": "EUDR Compliant"
       }
     ]
   },
-  "challenges": [
-    {
-      "title": "Legacy Systems",
-      "description": "Outdated mapping infrastructure and manual record-keeping processes that limit accuracy and real-time data access across rubber plantations.",
-      "category": "Infrastructure",
-      "priority": "Critical",
-      "solution": "Modern cloud-based geo-mapping platform with automated data collection and real-time synchronization capabilities."
+  "mission": {
+    "badge": {
+      "text": "Our Mission",
+      "bgColor": "bg-green-50",
+      "textColor": "text-green-700",
+      "dotColor": "bg-green-600"
     },
-    {
-      "title": "Limited Data Access",
-      "description": "Fragmented information systems that prevent stakeholders from accessing comprehensive plantation data and compliance metrics.",
-      "category": "Accessibility",
-      "priority": "High",
-      "solution": "Centralized dashboard providing 24/7 access to all stakeholders with role-based permissions and mobile compatibility."
+    "title": "Empowering Sri Lanka's <span class=\"text-green-600\">Rubber Industry</span>",
+    "subtitle": "We provide comprehensive EUDR compliance solutions that enable sustainable rubber cultivation while supporting farmer livelihoods and environmental protection.",
+    "image": {
+      "src": "/rubber2.jpg",
+      "alt": "Sri Lankan rubber plantation with workers collecting latex",
+      "overlayTitle": "Sustainable Rubber Cultivation",
+      "overlaySubtitle": "Supporting 30,000+ farmers across Sri Lanka"
     },
-    {
-      "title": "Data Inconsistency",
-      "description": "Inconsistent data formats and collection methods across different regions leading to unreliable reporting and decision-making.",
-      "category": "Quality",
-      "priority": "High",
-      "solution": "Standardized data collection protocols with automated validation and quality control mechanisms."
-    },
-    {
-      "title": "Scalability Issues",
-      "description": "Existing systems unable to handle the growing demands of Sri Lanka's expanding rubber industry and increasing regulatory requirements.",
-      "category": "Performance",
-      "priority": "Medium",
-      "solution": "Scalable cloud infrastructure designed to grow with industry needs and accommodate increasing data volumes."
-    },
-    {
-      "title": "EUDR Compliance Gaps",
-      "description": "Difficulty in meeting European Union Deforestation Regulation requirements due to inadequate traceability and documentation systems.",
-      "category": "Compliance",
-      "priority": "Critical",
-      "solution": "Comprehensive traceability system with blockchain-verified supply chain documentation and automated compliance reporting."
-    },
-    {
-      "title": "Environmental Monitoring",
-      "description": "Limited capability to monitor environmental impact and implement sustainable practices across rubber cultivation areas.",
-      "category": "Sustainability",
-      "priority": "High",
-      "solution": "Integrated environmental monitoring with satellite imagery, soil analysis, and carbon footprint tracking capabilities."
+    "pillars": [
+      {
+        "icon": "🛡️",
+        "title": "EUDR Compliance",
+        "description": "Advanced tracking and verification systems ensuring every plantation meets European Union Deforestation Regulation standards.",
+        "bgColor": "bg-green-600",
+        "borderColor": "border-green-100 hover:border-green-300"
+      },
+      {
+        "icon": "🛰️",
+        "title": "Smart Technology",
+        "description": "Satellite monitoring, AI analytics, and blockchain verification for transparent supply chain tracking.",
+        "bgColor": "bg-yellow-400",
+        "borderColor": "border-yellow-100 hover:border-yellow-300"
+      },
+      {
+        "icon": "👥",
+        "title": "Farmer Support",
+        "description": "Education, tools, and resources empowering smallholder farmers for sustainable cultivation practices.",
+        "bgColor": "bg-blue-600",
+        "borderColor": "border-blue-100 hover:border-blue-300"
+      }
+    ],
+    "vision": {
+      "title": "Building a Sustainable Future",
+      "description": "We envision a Sri Lankan rubber industry that leads the world in sustainable practices, where every farmer prospers while protecting our natural heritage for future generations."
     }
-  ],
+  },
   "impact": {
+    "badge": {
+      "text": "Our Impact",
+      "bgColor": "bg-green-100",
+      "textColor": "text-green-800",
+      "dotColor": "bg-green-600"
+    },
+    "title": "Measurable <span class=\"text-green-600\">Results</span>",
+    "subtitle": "Transforming Sri Lanka's rubber industry compliance with real, measurable outcomes that benefit farmers and the environment.",
     "metrics": [
       {
-        "value": "50,000+",
-        "label": "Active Users",
-        "description": "Rubber farmers, plantation managers, and industry stakeholders actively using our platform",
-        "growth": "+127% this year"
+        "value": "30K+",
+        "label": "Rubber Farms Compliant",
+        "description": "Small and medium rubber plantations now meeting EUDR standards",
+        "icon": "🏭"
       },
       {
-        "value": "99.9%",
-        "label": "Accuracy Rate",
-        "description": "Precision in geo-mapping and land boundary identification across all monitored plantations",
-        "growth": "Industry leading"
+        "value": "5",
+        "label": "Tire Manufacturers",
+        "description": "Major tire companies served with compliant rubber supply",
+        "icon": "🚗"
       },
       {
-        "value": "226,000",
-        "label": "Data Points Processed",
-        "description": "Real-time agricultural and environmental data points processed monthly",
-        "growth": "+340% quarterly"
+        "value": "95%",
+        "label": "Traceability Rate",
+        "description": "Complete supply chain visibility from tree to tire",
+        "icon": "📍"
       },
       {
-        "value": "850,000",
-        "label": "Hectares Mapped",
-        "description": "Total rubber plantation area mapped and monitored across Sri Lanka",
-        "growth": "78% coverage"
+        "value": "100%",
+        "label": "EUDR Success Rate",
+        "description": "Perfect compliance record for all partner plantations",
+        "icon": "✅"
       }
     ],
-    "achievements": [
-      {
-        "title": "EUDR Compliance Excellence",
-        "description": "100% of our partner plantations now meet European Union Deforestation Regulation requirements through our comprehensive tracking system.",
-        "metric": "100% Compliance Rate"
-      },
-      {
-        "title": "Sustainable Practices Adoption",
-        "description": "Significant reduction in environmental impact through optimized resource usage and deforestation prevention across monitored areas.",
-        "metric": "35% Carbon Reduction"
-      },
-      {
-        "title": "Economic Impact",
-        "description": "Direct positive economic impact on rubber farming communities through improved yield management and market access.",
-        "metric": "$12.5M Generated"
-      },
-      {
-        "title": "Technology Innovation",
-        "description": "Pioneer in applying advanced geo-mapping technology to tropical agriculture, setting new industry standards.",
-        "metric": "3 Patents Pending"
-      }
-    ],
-    "timeline": [
-      {
-        "year": "2019",
-        "milestone": "Platform Launch"
-      },
-      {
-        "year": "2023",
-        "milestone": "EUDR Compliance Leader"
-      },
-      {
-        "year": "2025",
-        "milestone": "Industry Standard"
-      }
-    ]
+    "successStories": {
+      "title": "Success Highlights",
+      "stories": [
+        {
+          "icon": "🌱",
+          "iconBg": "bg-green-600",
+          "title": "Smallholder Success",
+          "description": "Over 25,000 small-scale rubber farmers now have direct access to European markets through our EUDR compliance platform, increasing their income by an average of 35%."
+        },
+        {
+          "icon": "🏭",
+          "iconBg": "bg-yellow-400",
+          "title": "Industry Transformation",
+          "description": "Major tire manufacturers now have complete supply chain transparency, ensuring their products meet the highest environmental and ethical standards."
+        }
+      ]
+    },
+    "futureVision": {
+      "title": "Leading Sri Lanka's Green Future",
+      "description": "Together, we're building a sustainable rubber industry that protects our environment while ensuring economic prosperity for all stakeholders in the supply chain.",
+      "timeline": [
+        {
+          "year": "2024",
+          "label": "EUDR Launch"
+        },
+        {
+          "year": "2025",
+          "label": "Full Compliance"
+        },
+        {
+          "year": "2026",
+          "label": "Global Standard"
+        }
+      ]
+    }
   },
   "team": {
-    "stats": [
+    "badge": {
+      "text": "Our Team",
+      "bgColor": "bg-green-100",
+      "textColor": "text-green-800",
+      "dotColor": "bg-green-600"
+    },
+    "title": "Expert Team & <span class=\"text-green-600\">Core Values</span>",
+    "subtitle": "A diverse team of experts united by a shared commitment to transforming Sri Lanka's rubber industry through technology, sustainability, and innovation.",
+    "teamStats": [
       {
         "category": "Engineering",
         "count": "12",
@@ -174,34 +172,44 @@
         "description": "Environmental scientists and sustainability researchers"
       }
     ],
-    "values": [
-      {
-        "title": "Data-Driven Excellence",
-        "description": "Every decision is backed by comprehensive data analysis and real-world testing to ensure optimal outcomes for our users and the environment."
-      },
-      {
-        "title": "Environmental Stewardship",
-        "description": "We prioritize sustainable practices and environmental protection in everything we do, contributing to Sri Lanka's green future."
-      },
-      {
-        "title": "Community Partnership",
-        "description": "Working closely with local farming communities to understand their needs and develop solutions that truly make a difference."
-      },
-      {
-        "title": "Technological Innovation",
-        "description": "Continuously pushing the boundaries of what's possible with geo-mapping and agricultural technology."
-      },
-      {
-        "title": "Transparency & Trust",
-        "description": "Building lasting relationships through honest communication, reliable data, and consistent delivery of our promises."
-      },
-      {
-        "title": "Global Standards",
-        "description": "Meeting and exceeding international compliance requirements while maintaining local relevance and accessibility."
-      }
-    ],
-    "culture": {
-      "philosophy": "We believe in empowering every team member to contribute their unique expertise while maintaining a shared focus on sustainable innovation and measurable impact.",
+    "values": {
+      "title": "What Drives Us",
+      "items": [
+        {
+          "title": "Data-Driven Excellence",
+          "description": "Every decision is backed by comprehensive data analysis and real-world testing to ensure optimal outcomes for our users and the environment.",
+          "icon": "📊"
+        },
+        {
+          "title": "Environmental Stewardship",
+          "description": "We prioritize sustainable practices and environmental protection in everything we do, contributing to Sri Lanka's green future.",
+          "icon": "🌍"
+        },
+        {
+          "title": "Community Partnership",
+          "description": "Working closely with local farming communities to understand their needs and develop solutions that truly make a difference.",
+          "icon": "🤝"
+        },
+        {
+          "title": "Technological Innovation",
+          "description": "Continuously pushing the boundaries of what's possible with geo-mapping and agricultural technology.",
+          "icon": "🚀"
+        },
+        {
+          "title": "Transparency & Trust",
+          "description": "Building lasting relationships through honest communication, reliable data, and consistent delivery of our promises.",
+          "icon": "💎"
+        },
+        {
+          "title": "Global Standards",
+          "description": "Meeting and exceeding international compliance requirements while maintaining local relevance and accessibility.",
+          "icon": "🏆"
+        }
+      ]
+    },
+    "leadership": {
+      "title": "Our Leadership Philosophy",
+      "description": "We believe in empowering every team member to contribute their unique expertise while maintaining a shared focus on sustainable innovation and measurable impact.",
       "principles": [
         {
           "title": "Collaborative",
@@ -215,7 +223,11 @@
           "title": "Impact-Focused",
           "description": "Every initiative measured by its positive impact on farmers and the environment"
         }
-      ],
+      ]
+    },
+    "careers": {
+      "title": "Join Our Mission",
+      "description": "We're always looking for passionate individuals who share our vision of sustainable agriculture and technological innovation. Whether you're an engineer, agriculturalist, or sustainability expert, there's a place for you on our team.",
       "benefits": [
         {
           "title": "Remote Friendly",
@@ -233,13 +245,8 @@
           "title": "Growth",
           "description": "Career advancement opportunities"
         }
-      ]
+      ],
+      "cta": "View Open Positions"
     }
-  },
-  "hero": {
-    "title": "ABOUT",
-    "subtitle": "Revolutionizing Sri Lanka's rubber industry through intelligent geo-mapping and sustainable agricultural practices",
-    "location": "COLOMBO, SRI LANKA",
-    "backgroundImage": "/images/sri-lanka-rubber-landscape.jpg"
   }
 }

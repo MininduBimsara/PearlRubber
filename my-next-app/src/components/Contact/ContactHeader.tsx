@@ -1,34 +1,56 @@
 // components/contact/ContactHeader.tsx
 "use client";
 
-export default function ContactHeader() {
+interface ContactHeaderData {
+  title: string;
+  description: string[];
+  phone: {
+    text: string;
+    icon: string;
+    bgColor: string;
+    hoverColor: string;
+  };
+  consultation: {
+    text: string;
+    arrow: string;
+    bgColor: string;
+    hoverColor: string;
+  };
+}
+
+interface ContactHeaderProps {
+  data: ContactHeaderData;
+}
+
+export default function ContactHeader({ data }: ContactHeaderProps) {
   return (
     <div className="mb-8">
       <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">
-        Let's Talk.
+        {data.title}
       </h1>
 
       <div className="mb-6 space-y-1">
-        <p className="text-gray-600 text-base max-w-2xl">
-          We have built more than 100 digital products for businesses and
-          governments.
-        </p>
-        <p className="text-gray-600 text-base max-w-2xl">
-          Call us or book a meeting to talk about how you can grow your business
-          with technology.
-        </p>
+        {data.description.map((paragraph, index) => (
+          <p key={index} className="text-gray-600 text-base max-w-2xl">
+            {paragraph}
+          </p>
+        ))}
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3">
-        <button className="bg-yellow-300 hover:bg-yellow-400  text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group">
-          <span>📞</span>
-          <span>+1 (415) 498-1730</span>
+        <button
+          className={`${data.phone.bgColor} ${data.phone.hoverColor} text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group`}
+        >
+          <span>{data.phone.icon}</span>
+          <span>{data.phone.text}</span>
         </button>
 
-        <button className="bg-white hover:bg-gray-100 border border-black text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group">
-          <span>Book a free consultation</span>
+        <button
+          className={`${data.consultation.bgColor} ${data.consultation.hoverColor} border border-black text-black px-6 py-3 rounded-full font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 group`}
+        >
+          <span>{data.consultation.text}</span>
           <span className="group-hover:translate-x-1 transition-transform duration-200">
-            →
+            {data.consultation.arrow}
           </span>
         </button>
       </div>

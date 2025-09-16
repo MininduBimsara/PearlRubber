@@ -1,0 +1,237 @@
+{
+  "heroSection": {
+    "badge": {
+      "text": "Our Products"
+    },
+    "heading": {
+      "main": "Complete",
+      "highlighted": "EUDR Compliance",
+      "continuation": "Platform Suite"
+    },
+    "subtitle": "Advanced geo-mapping technology and AI-powered analytics designed specifically for Sri Lankan rubber plantations to achieve seamless EUDR compliance and sustainable farming practices.",
+    "backgroundImage": "/Globe.png",
+    "featureCards": [
+      {
+        "title": "Satellite Monitoring",
+        "description": "Real-time plantation tracking with 95% accuracy",
+        "icon": "satellite",
+        "color": "green"
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Comprehensive reporting and data visualization",
+        "icon": "barChart3",
+        "color": "blue"
+      },
+      {
+        "title": "EUDR Compliance",
+        "description": "Automated verification and reporting system",
+        "icon": "shield",
+        "color": "yellow"
+      },
+      {
+        "title": "Farmer Network",
+        "description": "Community support and training platform",
+        "icon": "users",
+        "color": "emerald"
+      }
+    ],
+    "stats": [
+      {
+        "number": "25+",
+        "label": "Processing Facilities"
+      },
+      {
+        "number": "1000+",
+        "label": "Plots Mapped"
+      },
+      {
+        "number": "5000+",
+        "label": "Farmers Connected"
+      },
+      {
+        "number": "100%",
+        "label": "EUDR Compliant"
+      }
+    ],
+    "cta": {
+      "primary": "Explore Our Solutions",
+      "secondary": "Request Demo"
+    }
+  },
+  "complianceSection": {
+    "heading": "Comprehensive EUDR Compliance",
+    "subtitle": "RubberWay Geo-Mapping minimizes non-compliance with EUDR through a robust verification process tailored for Sri Lankan rubber plantations.",
+    "features": [
+      {
+        "title": "Polygon Quality",
+        "description": "Precise boundary verification for accurate mapping",
+        "color": "bg-blue-500"
+      },
+      {
+        "title": "Historical Material Presence",
+        "description": "Track historical deforestation and land use changes",
+        "color": "bg-green-500"
+      },
+      {
+        "title": "Protected Areas Overlap",
+        "description": "Identify conflicts with conservation zones",
+        "color": "bg-orange-500"
+      },
+      {
+        "title": "Local Regulations",
+        "description": "Ensure compliance with Sri Lankan forestry laws",
+        "color": "bg-purple-500"
+      }
+    ],
+    "verificationProcess": {
+      "title": "Advanced Verification Process",
+      "description": "Our platform meticulously collects and checks all required information, going beyond simple data gathering. We conduct detailed assessments including detection of historical deforestation, verification of polygon quality, identification of overlaps with Protected Areas, and comprehensive checks on compliance with local regulations for both farmers and plots.",
+      "points": [
+        {
+          "title": "Automated Detection",
+          "description": "AI-powered analysis of historical satellite imagery"
+        },
+        {
+          "title": "Real-time Monitoring",
+          "description": "Continuous compliance tracking and alerts"
+        },
+        {
+          "title": "Local Expertise",
+          "description": "Sri Lankan regulatory knowledge built-in"
+        }
+      ]
+    }
+  },
+  "applicationsSection": {
+    "badge": {
+      "text": "Applications Suite"
+    },
+    "heading": "Powerful Applications Suite",
+    "subtitle": "Complete ecosystem of mobile and web applications designed specifically for Sri Lankan rubber processing facilities and farmers.",
+    "applications": [
+      {
+        "icon": "smartphone",
+        "title": "Mobile Application",
+        "subtitle": "Field data collection made simple",
+        "description": "Our mobile application revolutionizes data collection for natural rubber processing factories in Sri Lanka. Designed with an intuitive interface, the application enables straightforward information gathering directly from farmers. Recognizing the challenges of working in remote plantation areas, we have engineered the application to function seamlessly offline.",
+        "features": [
+          {
+            "text": "Offline data collection capability",
+            "color": "text-green-500"
+          },
+          {
+            "text": "GPS-enabled boundary mapping",
+            "color": "text-green-500"
+          },
+          {
+            "text": "Multi-language support",
+            "color": "text-green-500"
+          }
+        ],
+        "gradient": "bg-gradient-to-br from-green-50 to-blue-50",
+        "iconColor": "bg-gradient-to-br from-green-500 to-green-600",
+        "imageUrl": "/mobile.jpg"
+      },
+      {
+        "icon": "monitor",
+        "title": "Web Dashboard",
+        "subtitle": "Comprehensive data management",
+        "description": "The RubberWay web dashboard serves as a powerful data management and compliance tool specifically designed for Sri Lankan rubber processing facilities. It aggregates all required information, providing a centralized platform for comprehensive data oversight. Compliance checks run seamlessly, allowing users to quickly identify and address potential issues.",
+        "features": [
+          {
+            "text": "Real-time compliance monitoring",
+            "color": "text-blue-500"
+          },
+          {
+            "text": "Advanced analytics and reporting",
+            "color": "text-blue-500"
+          },
+          {
+            "text": "Multi-user access control",
+            "color": "text-blue-500"
+          }
+        ],
+        "gradient": "bg-gradient-to-br from-blue-50 to-purple-50",
+        "iconColor": "bg-gradient-to-br from-blue-500 to-blue-600",
+        "imageUrl": "/desktop.jpg"
+      }
+    ]
+  },
+  "statsSection": {
+    "badge": {
+      "text": "Our Impact"
+    },
+    "heading": {
+      "main": "Trusted by",
+      "highlighted": "Industry Leaders"
+    },
+    "subtitle": "Join thousands of farmers and processing facilities across Sri Lanka who trust RubberWay for their EUDR compliance needs.",
+    "mainStats": [
+      {
+        "number": "25+",
+        "label": "Processing Factories",
+        "icon": "mapPin",
+        "description": "Sri Lankan rubber processing facilities using our platform"
+      },
+      {
+        "number": "1000+",
+        "label": "Rubber Plots Mapped",
+        "icon": "trendingUp",
+        "description": "Hectares of plantation land accurately mapped and monitored"
+      },
+      {
+        "number": "5000+",
+        "label": "Farmers Connected",
+        "icon": "users",
+        "description": "Smallholder farmers integrated into the digital ecosystem"
+      }
+    ],
+    "additionalMetrics": [
+      {
+        "number": "99.9%",
+        "label": "System Uptime"
+      },
+      {
+        "number": "95%",
+        "label": "Accuracy Rate"
+      },
+      {
+        "number": "24/7",
+        "label": "Support Available"
+      },
+      {
+        "number": "100%",
+        "label": "EUDR Compliant"
+      }
+    ]
+  },
+  "ctaSection": {
+    "badge": {
+      "text": "Get Started Today"
+    },
+    "heading": {
+      "main": "Ready to Ensure",
+      "highlighted": "EUDR Compliance",
+      "continuation": "?"
+    },
+    "subtitle": "Start your journey to sustainable rubber farming with our comprehensive geo-mapping solution designed specifically for Sri Lankan plantations.",
+    "buttons": {
+      "primary": "Start Free Trial",
+      "secondary": "Schedule Demo"
+    },
+    "trustIndicators": {
+      "text": "Trusted by leading rubber processing facilities",
+      "metrics": [
+        {
+          "number": "25+",
+          "label": "Processing Factories"
+        },
+        {
+          "number": "5000+",
+          "label": "Farmers Connected"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "header": {
+    "title": "Let's Talk.",
+    "description": [
+      "We have built more than 100 digital products for businesses and governments.",
+      "Call us or book a meeting to talk about how you can grow your business with technology."
+    ],
+    "phone": {
+      "text": "+1 (415) 498-1730",
+      "icon": "📞",
+      "bgColor": "bg-yellow-300",
+      "hoverColor": "hover:bg-yellow-400"
+    },
+    "consultation": {
+      "text": "Book a free consultation",
+      "arrow": "→",
+      "bgColor": "bg-white",
+      "hoverColor": "hover:bg-gray-100"
+    }
+  },
+  "form": {
+    "title": "Send us a message",
+    "description": [
+      "You can send us a message here about what you are planning to build.",
+      "Alternatively you can send us a mail at"
+    ],
+    "email": {
+      "address": "hello@PearlRubber.io",
+      "icon": "📧",
+      "displayText": "hello@PearlRubber.io"
+    },
+    "fields": [
+      {
+        "label": "Name",
+        "type": "text",
+        "name": "name",
+        "placeholder": "Enter name",
+        "required": true,
+        "gridPosition": "left"
+      },
+      {
+        "label": "Your Company website",
+        "type": "url",
+        "name": "companyWebsite",
+        "placeholder": "Enter company website link",
+        "required": false,
+        "gridPosition": "right"
+      },
+      {
+        "label": "E-mail",
+        "type": "email",
+        "name": "email",
+        "placeholder": "Enter email address",
+        "required": true,
+        "gridPosition": "left"
+      },
+      {
+        "label": "Phone",
+        "labelNote": "(Optional)",
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "Enter phone number",
+        "required": false,
+        "gridPosition": "right"
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "name": "message",
+        "placeholder": "Tell us about your project or what you're planning to build...",
+        "required": true,
+        "rows": 4,
+        "gridPosition": "full"
+      }
+    ],
+    "submitButton": {
+      "defaultText": "Send Message",
+      "submittingText": "Sending...",
+      "successText": "Message Sent! ✓",
+      "successIcon": "✓"
+    }
+  },
+  "page": {
+    "backgroundImage": "/my-image.jpg",
+    "backgroundImageAlt": "",
+    "glassmorphism": {
+      "backdropBlur": "backdrop-blur-[20px]",
+      "backgroundColor": "bg-white/30",
+      "borderColor": "border-white/20",
+      "borderRadius": "rounded-[20px]"
+    },
+    "fontFamily": "'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif"
+  }
+}
