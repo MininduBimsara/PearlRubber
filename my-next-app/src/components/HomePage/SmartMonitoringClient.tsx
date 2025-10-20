@@ -48,7 +48,7 @@ export default function SmartMonitoringClient({
       details:
         "High-quality rubber cultivation and research facilities in Sabaragamuwa.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/4/49/Rubber_Plantation_in_Sri_Lanka.jpg",
+        "/download.jpeg",
     },
     {
       name: "Ratnapura",
@@ -56,7 +56,7 @@ export default function SmartMonitoringClient({
       lng: 80.4,
       details: "Gem city and a major rubber production area.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Rubber_trees_Sri_Lanka_01.jpg",
+        "/rath apura.jpg",
     },
     {
       name: "Kalutara",
@@ -64,7 +64,7 @@ export default function SmartMonitoringClient({
       lng: 79.96,
       details: "Coastal hub for rubber and coconut mixed plantations.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rubber_trees_Sri_Lanka_02.jpg",
+        "Kalutara.jpg",
     },
     {
       name: "Matara",
@@ -72,7 +72,7 @@ export default function SmartMonitoringClient({
       lng: 80.55,
       details: "Southern estates known for sustainable replanting programs.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Rubber_Plantation_-_Sri_Lanka.jpg",
+        "Matara.webp",
     },
     {
       name: "Kandy",
@@ -80,7 +80,7 @@ export default function SmartMonitoringClient({
       lng: 80.63,
       details: "Hill country combining tea and rubber cultivation.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Rubber_tapping_Sri_Lanka.jpg",
+        "Kandy.jpg",
     },
   ];
 
